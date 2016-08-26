@@ -1,0 +1,1222 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2702B8761D477A3300273917 /* libSocialInstagram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2702B8741D477A3300273917 /* libSocialInstagram.a */; };
+		270A54631D6BF230007AA496 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A54621D6BF230007AA496 /* UIColor+Hex.m */; };
+		270A54661D6BF388007AA496 /* UIColor+Silversand.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A54651D6BF388007AA496 /* UIColor+Silversand.m */; };
+		270A54811D6C3153007AA496 /* SimpleEditCuterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A54801D6C3153007AA496 /* SimpleEditCuterController.m */; };
+		272F7A521D36667C008223EB /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F7A4B1D36667C008223EB /* libSocialWechat.a */; };
+		272F7A531D36667C008223EB /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F7A4C1D36667C008223EB /* libWeChatSDK.a */; };
+		272F7A541D36667C008223EB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 272F7A4D1D36667C008223EB /* README.txt */; };
+		272F7A5A1D3666A0008223EB /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F7A561D3666A0008223EB /* libSocialQQ.a */; };
+		272F7A5B1D3666A0008223EB /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F7A571D3666A0008223EB /* TencentOpenAPI.framework */; };
+		272F7A5C1D3666A0008223EB /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 272F7A581D3666A0008223EB /* TencentOpenApi_IOS_Bundle.bundle */; };
+		272F7A6D1D3666B8008223EB /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F7A5E1D3666B8008223EB /* libSocialSinaSSO.a */; };
+		272F7A6E1D3666B8008223EB /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F7A5F1D3666B8008223EB /* libWeiboSDK.a */; };
+		272F7A6F1D3666B8008223EB /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 272F7A6A1D3666B8008223EB /* WeiboSDK.bundle */; };
+		273C081E1D4D0A7B00A41682 /* CLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 273C07CC1D4D0A7B00A41682 /* CLImageEditor.bundle */; };
+		273C081F1D4D0A7B00A41682 /* CLImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07CE1D4D0A7B00A41682 /* CLImageEditor.m */; };
+		273C08201D4D0A7B00A41682 /* CLImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07D01D4D0A7B00A41682 /* CLImageEditorTheme.m */; };
+		273C08211D4D0A7B00A41682 /* CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07D21D4D0A7B00A41682 /* CLImageToolInfo.m */; };
+		273C08221D4D0A7B00A41682 /* CLAdjustmentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07D61D4D0A7B00A41682 /* CLAdjustmentTool.m */; };
+		273C08231D4D0A7B00A41682 /* CLBlurTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07D91D4D0A7B00A41682 /* CLBlurTool.m */; };
+		273C08241D4D0A7B00A41682 /* CLClippingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07DC1D4D0A7B00A41682 /* CLClippingTool.m */; };
+		273C08251D4D0A7B00A41682 /* CLDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07DF1D4D0A7B00A41682 /* CLDrawTool.m */; };
+		273C08261D4D0A7B00A41682 /* CLBloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07E31D4D0A7B00A41682 /* CLBloomEffect.m */; };
+		273C08271D4D0A7B00A41682 /* CLGloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07E51D4D0A7B00A41682 /* CLGloomEffect.m */; };
+		273C08281D4D0A7B00A41682 /* CLHighlightShadowEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07E71D4D0A7B00A41682 /* CLHighlightShadowEffect.m */; };
+		273C08291D4D0A7B00A41682 /* CLHueEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07E91D4D0A7B00A41682 /* CLHueEffect.m */; };
+		273C082A1D4D0A7B00A41682 /* CLPixellateEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07EB1D4D0A7B00A41682 /* CLPixellateEffect.m */; };
+		273C082B1D4D0A7B00A41682 /* CLPosterizeEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07ED1D4D0A7B00A41682 /* CLPosterizeEffect.m */; };
+		273C082C1D4D0A7B00A41682 /* CLSpotEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07EF1D4D0A7B00A41682 /* CLSpotEffect.m */; };
+		273C082D1D4D0A7B00A41682 /* CLEffectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07F11D4D0A7B00A41682 /* CLEffectBase.m */; };
+		273C082E1D4D0A7B00A41682 /* CLEffectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07F31D4D0A7B00A41682 /* CLEffectTool.m */; };
+		273C082F1D4D0A7B00A41682 /* CLFilterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07F61D4D0A7B00A41682 /* CLFilterBase.m */; };
+		273C08301D4D0A7B00A41682 /* CLFilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07F81D4D0A7B00A41682 /* CLFilterTool.m */; };
+		273C08311D4D0A7B00A41682 /* CLImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07FA1D4D0A7B00A41682 /* CLImageToolBase.m */; };
+		273C08321D4D0A7B00A41682 /* CLRotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C07FD1D4D0A7B00A41682 /* CLRotateTool.m */; };
+		273C08331D4D0A7B00A41682 /* CLToneCurveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08001D4D0A7B00A41682 /* CLToneCurveTool.m */; };
+		273C08341D4D0A7B00A41682 /* CLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08031D4D0A7B00A41682 /* CLCircleView.m */; };
+		273C08351D4D0A7B00A41682 /* CLColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08051D4D0A7B00A41682 /* CLColorPickerView.m */; };
+		273C08361D4D0A7B00A41682 /* CLImageEditorTheme+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08071D4D0A7B00A41682 /* CLImageEditorTheme+Private.m */; };
+		273C08371D4D0A7B00A41682 /* CLImageToolInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08091D4D0A7B00A41682 /* CLImageToolInfo+Private.m */; };
+		273C08381D4D0A7B00A41682 /* CLToolbarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C080D1D4D0A7B00A41682 /* CLToolbarMenuItem.m */; };
+		273C08391D4D0A7B00A41682 /* UIView+CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C080F1D4D0A7B00A41682 /* UIView+CLImageToolInfo.m */; };
+		273C083A1D4D0A7B00A41682 /* CLClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08121D4D0A7B00A41682 /* CLClassList.m */; };
+		273C083B1D4D0A7B00A41682 /* CLSplineInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08141D4D0A7B00A41682 /* CLSplineInterpolator.m */; };
+		273C083C1D4D0A7B00A41682 /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08161D4D0A7B00A41682 /* UIDevice+SystemVersion.m */; };
+		273C083D1D4D0A7B00A41682 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08181D4D0A7B00A41682 /* UIImage+Utility.m */; };
+		273C083E1D4D0A7B00A41682 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C081A1D4D0A7B00A41682 /* UIView+Frame.m */; };
+		273C083F1D4D0A7B00A41682 /* _CLImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C081D1D4D0A7B00A41682 /* _CLImageEditorViewController.m */; };
+		273C084D1D4D0A8600A41682 /* CLFontPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08421D4D0A8600A41682 /* CLFontPickerView.m */; };
+		273C084E1D4D0A8600A41682 /* CLPickerDrum.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08441D4D0A8600A41682 /* CLPickerDrum.m */; };
+		273C084F1D4D0A8600A41682 /* CLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08461D4D0A8600A41682 /* CLPickerView.m */; };
+		273C08501D4D0A8600A41682 /* CLTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08481D4D0A8600A41682 /* CLTextLabel.m */; };
+		273C08511D4D0A8600A41682 /* CLTextSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C084A1D4D0A8600A41682 /* CLTextSettingView.m */; };
+		273C08521D4D0A8600A41682 /* CLTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C084C1D4D0A8600A41682 /* CLTextTool.m */; };
+		273C085A1D4D787100A41682 /* ExtendCameraConfigView.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C08591D4D787100A41682 /* ExtendCameraConfigView.m */; };
+		273C085D1D4E26C500A41682 /* SimpleEditFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C085C1D4E26C500A41682 /* SimpleEditFilterController.m */; };
+		273C08601D4E27BA00A41682 /* SimpleEditSkinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273C085F1D4E27BA00A41682 /* SimpleEditSkinController.m */; };
+		274189091D6D3C43005F3F3F /* ExtendEditSkinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 274189081D6D3C43005F3F3F /* ExtendEditSkinView.m */; };
+		274333FB1D3798A400DB5438 /* libSocialLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274333F91D3798A400DB5438 /* libSocialLine.a */; };
+		276688081D37CB4400D1FB3D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276688071D37CB4400D1FB3D /* Social.framework */; };
+		276AB1691D44AAC6004F363B /* SimpleEditStickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276AB1681D44AAC6004F363B /* SimpleEditStickerController.m */; };
+		276AB16C1D44B289004F363B /* TuSDK.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276AB16E1D44B289004F363B /* TuSDK.strings */; };
+		276AFD621D35C1CC00D709EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 276AFD611D35C1CC00D709EB /* main.m */; };
+		276AFD651D35C1CC00D709EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 276AFD641D35C1CC00D709EB /* AppDelegate.m */; };
+		276AFD6D1D35C1CC00D709EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AFD6C1D35C1CC00D709EB /* Assets.xcassets */; };
+		276AFD701D35C1CC00D709EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276AFD6E1D35C1CC00D709EB /* LaunchScreen.storyboard */; };
+		276AFD851D361AEA00D709EB /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFD841D361AEA00D709EB /* GPUImage.framework */; };
+		276AFD881D361B1500D709EB /* TuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFD861D361B1500D709EB /* TuSDK.framework */; };
+		276AFD891D361B1500D709EB /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFD871D361B1500D709EB /* TuSDKGeeV1.framework */; };
+		276AFD911D361C3500D709EB /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 276AFD901D361C3500D709EB /* TuSDK.bundle */; };
+		276AFDAD1D36504000D709EB /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276AFD931D36503F00D709EB /* UMSocialLocalizable.strings */; };
+		276AFDAE1D36504000D709EB /* libUMSocial_Sdk_5.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDA11D36504000D709EB /* libUMSocial_Sdk_5.2.1.a */; };
+		276AFDAF1D36504000D709EB /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA31D36504000D709EB /* UMSCommentDetailController.xib */; };
+		276AFDB01D36504000D709EB /* UMSCommentInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA41D36504000D709EB /* UMSCommentInputController.xib */; };
+		276AFDB11D36504000D709EB /* UMSCommentInputControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA51D36504000D709EB /* UMSCommentInputControlleriPad.xib */; };
+		276AFDB21D36504000D709EB /* UMShareEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA61D36504000D709EB /* UMShareEditViewController.xib */; };
+		276AFDB31D36504000D709EB /* UMShareEditViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA71D36504000D709EB /* UMShareEditViewControlleriPad.xib */; };
+		276AFDB41D36504000D709EB /* UMSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA81D36504000D709EB /* UMSLoginViewController.xib */; };
+		276AFDB51D36504000D709EB /* UMSnsAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDA91D36504000D709EB /* UMSnsAccountViewController.xib */; };
+		276AFDB61D36504000D709EB /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDAA1D36504000D709EB /* UMSShareListController.xib */; };
+		276AFDB71D36504000D709EB /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 276AFDAB1D36504000D709EB /* UMSocialSDKResourcesNew.bundle */; };
+		276AFDB91D3650E100D709EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDB81D3650E100D709EB /* SystemConfiguration.framework */; };
+		276AFDBB1D3650F300D709EB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDBA1D3650F300D709EB /* ImageIO.framework */; };
+		276AFDBD1D36523100D709EB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDBC1D36523100D709EB /* Security.framework */; };
+		276AFDBF1D36524700D709EB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDBE1D36524700D709EB /* libiconv.tbd */; };
+		276AFDC11D36526700D709EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDC01D36526600D709EB /* CoreGraphics.framework */; };
+		276AFDC31D36527200D709EB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDC21D36527200D709EB /* libsqlite3.tbd */; };
+		276AFDC51D36527F00D709EB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDC41D36527F00D709EB /* CoreTelephony.framework */; };
+		276AFDC71D36528F00D709EB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDC61D36528F00D709EB /* libstdc++.tbd */; };
+		276AFDC91D36529900D709EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 276AFDC81D36529900D709EB /* libz.tbd */; };
+		2799A6211D6A0E2B00F45F7E /* ExtendCameraBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799A6201D6A0E2B00F45F7E /* ExtendCameraBottomView.m */; };
+		2799A6241D6A180F00F45F7E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799A6231D6A180F00F45F7E /* UIView+Extension.m */; };
+		2799A6271D6A235900F45F7E /* UIColor+Viking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799A6261D6A235900F45F7E /* UIColor+Viking.m */; };
+		2799A62A1D6A28B100F45F7E /* ExtendEditMultipleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799A6291D6A28B100F45F7E /* ExtendEditMultipleView.m */; };
+		2799A62D1D6A2C3B00F45F7E /* UIColor+Puertorico.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799A62C1D6A2C3B00F45F7E /* UIColor+Puertorico.m */; };
+		2799CADE1D3B935400CA533B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799CADD1D3B935400CA533B /* RootViewController.m */; };
+		2799CAE41D3BCCE900CA533B /* ExtendCameraBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799CAE31D3BCCE900CA533B /* ExtendCameraBaseView.m */; };
+		2799CAE71D3BD08900CA533B /* SimpleEditMultipleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799CAE61D3BD08900CA533B /* SimpleEditMultipleController.m */; };
+		27B429801D49E94E00F27DC6 /* libSocialWhatsapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B4297E1D49E94E00F27DC6 /* libSocialWhatsapp.a */; };
+		27F0A8CB1D390D2900407292 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F0A8CA1D390D2900407292 /* libMasonry.a */; };
+		2DED55B7352BAF8135649180 /* libPods-PhotoShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F42F9ABFAF47A5927C351CAD /* libPods-PhotoShare.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2702B8741D477A3300273917 /* libSocialInstagram.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialInstagram.a; sourceTree = "<group>"; };
+		2702B8751D477A3300273917 /* UMSocialInstagramHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialInstagramHandler.h; sourceTree = "<group>"; };
+		270A54611D6BF230007AA496 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		270A54621D6BF230007AA496 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		270A54641D6BF388007AA496 /* UIColor+Silversand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Silversand.h"; sourceTree = "<group>"; };
+		270A54651D6BF388007AA496 /* UIColor+Silversand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Silversand.m"; sourceTree = "<group>"; };
+		270A547F1D6C3153007AA496 /* SimpleEditCuterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditCuterController.h; sourceTree = "<group>"; };
+		270A54801D6C3153007AA496 /* SimpleEditCuterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditCuterController.m; sourceTree = "<group>"; };
+		272F7A4B1D36667C008223EB /* libSocialWechat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWechat.a; sourceTree = "<group>"; };
+		272F7A4C1D36667C008223EB /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		272F7A4D1D36667C008223EB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		272F7A4E1D36667C008223EB /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		272F7A4F1D36667C008223EB /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		272F7A501D36667C008223EB /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		272F7A511D36667C008223EB /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		272F7A561D3666A0008223EB /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		272F7A571D3666A0008223EB /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		272F7A581D3666A0008223EB /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		272F7A591D3666A0008223EB /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		272F7A5E1D3666B8008223EB /* libSocialSinaSSO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSinaSSO.a; sourceTree = "<group>"; };
+		272F7A5F1D3666B8008223EB /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		272F7A601D3666B8008223EB /* UMSocialSinaSSOHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaSSOHandler.h; sourceTree = "<group>"; };
+		272F7A611D3666B8008223EB /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		272F7A621D3666B8008223EB /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		272F7A631D3666B8008223EB /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		272F7A641D3666B8008223EB /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		272F7A651D3666B8008223EB /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		272F7A661D3666B8008223EB /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		272F7A671D3666B8008223EB /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		272F7A681D3666B8008223EB /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		272F7A691D3666B8008223EB /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
+		272F7A6A1D3666B8008223EB /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		272F7A6B1D3666B8008223EB /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		272F7A6C1D3666B8008223EB /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		273C07CC1D4D0A7B00A41682 /* CLImageEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLImageEditor.bundle; sourceTree = "<group>"; };
+		273C07CD1D4D0A7B00A41682 /* CLImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageEditor.h; sourceTree = "<group>"; };
+		273C07CE1D4D0A7B00A41682 /* CLImageEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageEditor.m; sourceTree = "<group>"; };
+		273C07CF1D4D0A7B00A41682 /* CLImageEditorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageEditorTheme.h; sourceTree = "<group>"; };
+		273C07D01D4D0A7B00A41682 /* CLImageEditorTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageEditorTheme.m; sourceTree = "<group>"; };
+		273C07D11D4D0A7B00A41682 /* CLImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolInfo.h; sourceTree = "<group>"; };
+		273C07D21D4D0A7B00A41682 /* CLImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageToolInfo.m; sourceTree = "<group>"; };
+		273C07D51D4D0A7B00A41682 /* CLAdjustmentTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAdjustmentTool.h; sourceTree = "<group>"; };
+		273C07D61D4D0A7B00A41682 /* CLAdjustmentTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAdjustmentTool.m; sourceTree = "<group>"; };
+		273C07D81D4D0A7B00A41682 /* CLBlurTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBlurTool.h; sourceTree = "<group>"; };
+		273C07D91D4D0A7B00A41682 /* CLBlurTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBlurTool.m; sourceTree = "<group>"; };
+		273C07DB1D4D0A7B00A41682 /* CLClippingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClippingTool.h; sourceTree = "<group>"; };
+		273C07DC1D4D0A7B00A41682 /* CLClippingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClippingTool.m; sourceTree = "<group>"; };
+		273C07DE1D4D0A7B00A41682 /* CLDrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDrawTool.h; sourceTree = "<group>"; };
+		273C07DF1D4D0A7B00A41682 /* CLDrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDrawTool.m; sourceTree = "<group>"; };
+		273C07E21D4D0A7B00A41682 /* CLBloomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBloomEffect.h; sourceTree = "<group>"; };
+		273C07E31D4D0A7B00A41682 /* CLBloomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBloomEffect.m; sourceTree = "<group>"; };
+		273C07E41D4D0A7B00A41682 /* CLGloomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGloomEffect.h; sourceTree = "<group>"; };
+		273C07E51D4D0A7B00A41682 /* CLGloomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGloomEffect.m; sourceTree = "<group>"; };
+		273C07E61D4D0A7B00A41682 /* CLHighlightShadowEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHighlightShadowEffect.h; sourceTree = "<group>"; };
+		273C07E71D4D0A7B00A41682 /* CLHighlightShadowEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHighlightShadowEffect.m; sourceTree = "<group>"; };
+		273C07E81D4D0A7B00A41682 /* CLHueEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHueEffect.h; sourceTree = "<group>"; };
+		273C07E91D4D0A7B00A41682 /* CLHueEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHueEffect.m; sourceTree = "<group>"; };
+		273C07EA1D4D0A7B00A41682 /* CLPixellateEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPixellateEffect.h; sourceTree = "<group>"; };
+		273C07EB1D4D0A7B00A41682 /* CLPixellateEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPixellateEffect.m; sourceTree = "<group>"; };
+		273C07EC1D4D0A7B00A41682 /* CLPosterizeEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPosterizeEffect.h; sourceTree = "<group>"; };
+		273C07ED1D4D0A7B00A41682 /* CLPosterizeEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPosterizeEffect.m; sourceTree = "<group>"; };
+		273C07EE1D4D0A7B00A41682 /* CLSpotEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSpotEffect.h; sourceTree = "<group>"; };
+		273C07EF1D4D0A7B00A41682 /* CLSpotEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSpotEffect.m; sourceTree = "<group>"; };
+		273C07F01D4D0A7B00A41682 /* CLEffectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEffectBase.h; sourceTree = "<group>"; };
+		273C07F11D4D0A7B00A41682 /* CLEffectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEffectBase.m; sourceTree = "<group>"; };
+		273C07F21D4D0A7B00A41682 /* CLEffectTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEffectTool.h; sourceTree = "<group>"; };
+		273C07F31D4D0A7B00A41682 /* CLEffectTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEffectTool.m; sourceTree = "<group>"; };
+		273C07F51D4D0A7B00A41682 /* CLFilterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFilterBase.h; sourceTree = "<group>"; };
+		273C07F61D4D0A7B00A41682 /* CLFilterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFilterBase.m; sourceTree = "<group>"; };
+		273C07F71D4D0A7B00A41682 /* CLFilterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFilterTool.h; sourceTree = "<group>"; };
+		273C07F81D4D0A7B00A41682 /* CLFilterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFilterTool.m; sourceTree = "<group>"; };
+		273C07F91D4D0A7B00A41682 /* CLImageToolBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolBase.h; sourceTree = "<group>"; };
+		273C07FA1D4D0A7B00A41682 /* CLImageToolBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageToolBase.m; sourceTree = "<group>"; };
+		273C07FC1D4D0A7B00A41682 /* CLRotateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRotateTool.h; sourceTree = "<group>"; };
+		273C07FD1D4D0A7B00A41682 /* CLRotateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRotateTool.m; sourceTree = "<group>"; };
+		273C07FF1D4D0A7B00A41682 /* CLToneCurveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLToneCurveTool.h; sourceTree = "<group>"; };
+		273C08001D4D0A7B00A41682 /* CLToneCurveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLToneCurveTool.m; sourceTree = "<group>"; };
+		273C08021D4D0A7B00A41682 /* CLCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCircleView.h; sourceTree = "<group>"; };
+		273C08031D4D0A7B00A41682 /* CLCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCircleView.m; sourceTree = "<group>"; };
+		273C08041D4D0A7B00A41682 /* CLColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLColorPickerView.h; sourceTree = "<group>"; };
+		273C08051D4D0A7B00A41682 /* CLColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLColorPickerView.m; sourceTree = "<group>"; };
+		273C08061D4D0A7B00A41682 /* CLImageEditorTheme+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLImageEditorTheme+Private.h"; sourceTree = "<group>"; };
+		273C08071D4D0A7B00A41682 /* CLImageEditorTheme+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLImageEditorTheme+Private.m"; sourceTree = "<group>"; };
+		273C08081D4D0A7B00A41682 /* CLImageToolInfo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLImageToolInfo+Private.h"; sourceTree = "<group>"; };
+		273C08091D4D0A7B00A41682 /* CLImageToolInfo+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLImageToolInfo+Private.m"; sourceTree = "<group>"; };
+		273C080A1D4D0A7B00A41682 /* CLImageToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolProtocol.h; sourceTree = "<group>"; };
+		273C080B1D4D0A7B00A41682 /* CLImageToolSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolSettings.h; sourceTree = "<group>"; };
+		273C080C1D4D0A7B00A41682 /* CLToolbarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLToolbarMenuItem.h; sourceTree = "<group>"; };
+		273C080D1D4D0A7B00A41682 /* CLToolbarMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLToolbarMenuItem.m; sourceTree = "<group>"; };
+		273C080E1D4D0A7B00A41682 /* UIView+CLImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLImageToolInfo.h"; sourceTree = "<group>"; };
+		273C080F1D4D0A7B00A41682 /* UIView+CLImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLImageToolInfo.m"; sourceTree = "<group>"; };
+		273C08111D4D0A7B00A41682 /* CLClassList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClassList.h; sourceTree = "<group>"; };
+		273C08121D4D0A7B00A41682 /* CLClassList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClassList.m; sourceTree = "<group>"; };
+		273C08131D4D0A7B00A41682 /* CLSplineInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSplineInterpolator.h; sourceTree = "<group>"; };
+		273C08141D4D0A7B00A41682 /* CLSplineInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSplineInterpolator.m; sourceTree = "<group>"; };
+		273C08151D4D0A7B00A41682 /* UIDevice+SystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemVersion.h"; sourceTree = "<group>"; };
+		273C08161D4D0A7B00A41682 /* UIDevice+SystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemVersion.m"; sourceTree = "<group>"; };
+		273C08171D4D0A7B00A41682 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		273C08181D4D0A7B00A41682 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		273C08191D4D0A7B00A41682 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		273C081A1D4D0A7B00A41682 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		273C081C1D4D0A7B00A41682 /* _CLImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CLImageEditorViewController.h; sourceTree = "<group>"; };
+		273C081D1D4D0A7B00A41682 /* _CLImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CLImageEditorViewController.m; sourceTree = "<group>"; };
+		273C08411D4D0A8600A41682 /* CLFontPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFontPickerView.h; sourceTree = "<group>"; };
+		273C08421D4D0A8600A41682 /* CLFontPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFontPickerView.m; sourceTree = "<group>"; };
+		273C08431D4D0A8600A41682 /* CLPickerDrum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPickerDrum.h; sourceTree = "<group>"; };
+		273C08441D4D0A8600A41682 /* CLPickerDrum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPickerDrum.m; sourceTree = "<group>"; };
+		273C08451D4D0A8600A41682 /* CLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPickerView.h; sourceTree = "<group>"; };
+		273C08461D4D0A8600A41682 /* CLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPickerView.m; sourceTree = "<group>"; };
+		273C08471D4D0A8600A41682 /* CLTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTextLabel.h; sourceTree = "<group>"; };
+		273C08481D4D0A8600A41682 /* CLTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextLabel.m; sourceTree = "<group>"; };
+		273C08491D4D0A8600A41682 /* CLTextSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTextSettingView.h; sourceTree = "<group>"; };
+		273C084A1D4D0A8600A41682 /* CLTextSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextSettingView.m; sourceTree = "<group>"; };
+		273C084B1D4D0A8600A41682 /* CLTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTextTool.h; sourceTree = "<group>"; };
+		273C084C1D4D0A8600A41682 /* CLTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextTool.m; sourceTree = "<group>"; };
+		273C08581D4D787100A41682 /* ExtendCameraConfigView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendCameraConfigView.h; sourceTree = "<group>"; };
+		273C08591D4D787100A41682 /* ExtendCameraConfigView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendCameraConfigView.m; sourceTree = "<group>"; };
+		273C085B1D4E26C500A41682 /* SimpleEditFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditFilterController.h; sourceTree = "<group>"; };
+		273C085C1D4E26C500A41682 /* SimpleEditFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditFilterController.m; sourceTree = "<group>"; };
+		273C085E1D4E27BA00A41682 /* SimpleEditSkinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditSkinController.h; sourceTree = "<group>"; };
+		273C085F1D4E27BA00A41682 /* SimpleEditSkinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditSkinController.m; sourceTree = "<group>"; };
+		274189071D6D3C43005F3F3F /* ExtendEditSkinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendEditSkinView.h; sourceTree = "<group>"; };
+		274189081D6D3C43005F3F3F /* ExtendEditSkinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendEditSkinView.m; sourceTree = "<group>"; };
+		274333F91D3798A400DB5438 /* libSocialLine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialLine.a; sourceTree = "<group>"; };
+		274333FA1D3798A400DB5438 /* UMSocialLineHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialLineHandler.h; sourceTree = "<group>"; };
+		276688071D37CB4400D1FB3D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		276AB1671D44AAC6004F363B /* SimpleEditStickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditStickerController.h; sourceTree = "<group>"; };
+		276AB1681D44AAC6004F363B /* SimpleEditStickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditStickerController.m; sourceTree = "<group>"; };
+		276AFD5D1D35C1CC00D709EB /* 特写美刻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "特写美刻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		276AFD611D35C1CC00D709EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		276AFD631D35C1CC00D709EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		276AFD641D35C1CC00D709EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		276AFD6C1D35C1CC00D709EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		276AFD6F1D35C1CC00D709EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		276AFD711D35C1CC00D709EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276AFD841D361AEA00D709EB /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = PhotoShare/GPUImage.framework; sourceTree = "<group>"; };
+		276AFD861D361B1500D709EB /* TuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TuSDK.framework; path = PhotoShare/TuSDK.framework; sourceTree = "<group>"; };
+		276AFD871D361B1500D709EB /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TuSDKGeeV1.framework; path = PhotoShare/TuSDKGeeV1.framework; sourceTree = "<group>"; };
+		276AFD901D361C3500D709EB /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
+		276AFD941D36503F00D709EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
+		276AFD961D36504000D709EB /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
+		276AFD971D36504000D709EB /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
+		276AFD981D36504000D709EB /* UMSocialBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialBar.h; sourceTree = "<group>"; };
+		276AFD991D36504000D709EB /* UMSocialConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialConfig.h; sourceTree = "<group>"; };
+		276AFD9A1D36504000D709EB /* UMSocialControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerService.h; sourceTree = "<group>"; };
+		276AFD9B1D36504000D709EB /* UMSocialControllerServiceComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerServiceComment.h; sourceTree = "<group>"; };
+		276AFD9C1D36504000D709EB /* UMSocialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialData.h; sourceTree = "<group>"; };
+		276AFD9D1D36504000D709EB /* UMSocialDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialDataService.h; sourceTree = "<group>"; };
+		276AFD9E1D36504000D709EB /* UMSocialSnsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsData.h; sourceTree = "<group>"; };
+		276AFD9F1D36504000D709EB /* UMSocialSnsPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsPlatformManager.h; sourceTree = "<group>"; };
+		276AFDA01D36504000D709EB /* UMSocialSnsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsService.h; sourceTree = "<group>"; };
+		276AFDA11D36504000D709EB /* libUMSocial_Sdk_5.2.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_5.2.1.a; sourceTree = "<group>"; };
+		276AFDA31D36504000D709EB /* UMSCommentDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentDetailController.xib; sourceTree = "<group>"; };
+		276AFDA41D36504000D709EB /* UMSCommentInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputController.xib; sourceTree = "<group>"; };
+		276AFDA51D36504000D709EB /* UMSCommentInputControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputControlleriPad.xib; sourceTree = "<group>"; };
+		276AFDA61D36504000D709EB /* UMShareEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewController.xib; sourceTree = "<group>"; };
+		276AFDA71D36504000D709EB /* UMShareEditViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewControlleriPad.xib; sourceTree = "<group>"; };
+		276AFDA81D36504000D709EB /* UMSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSLoginViewController.xib; sourceTree = "<group>"; };
+		276AFDA91D36504000D709EB /* UMSnsAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSnsAccountViewController.xib; sourceTree = "<group>"; };
+		276AFDAA1D36504000D709EB /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
+		276AFDAB1D36504000D709EB /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
+		276AFDAC1D36504000D709EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
+		276AFDB81D3650E100D709EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		276AFDBA1D3650F300D709EB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		276AFDBC1D36523100D709EB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		276AFDBE1D36524700D709EB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		276AFDC01D36526600D709EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		276AFDC21D36527200D709EB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		276AFDC41D36527F00D709EB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		276AFDC61D36528F00D709EB /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		276AFDC81D36529900D709EB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2799A61F1D6A0E2B00F45F7E /* ExtendCameraBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendCameraBottomView.h; sourceTree = "<group>"; };
+		2799A6201D6A0E2B00F45F7E /* ExtendCameraBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendCameraBottomView.m; sourceTree = "<group>"; };
+		2799A6221D6A180F00F45F7E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		2799A6231D6A180F00F45F7E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2799A6251D6A235900F45F7E /* UIColor+Viking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Viking.h"; sourceTree = "<group>"; };
+		2799A6261D6A235900F45F7E /* UIColor+Viking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Viking.m"; sourceTree = "<group>"; };
+		2799A6281D6A28B100F45F7E /* ExtendEditMultipleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendEditMultipleView.h; sourceTree = "<group>"; };
+		2799A6291D6A28B100F45F7E /* ExtendEditMultipleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendEditMultipleView.m; sourceTree = "<group>"; };
+		2799A62B1D6A2C3B00F45F7E /* UIColor+Puertorico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Puertorico.h"; sourceTree = "<group>"; };
+		2799A62C1D6A2C3B00F45F7E /* UIColor+Puertorico.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Puertorico.m"; sourceTree = "<group>"; };
+		2799CADC1D3B935400CA533B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2799CADD1D3B935400CA533B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		2799CAE21D3BCCE900CA533B /* ExtendCameraBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendCameraBaseView.h; sourceTree = "<group>"; };
+		2799CAE31D3BCCE900CA533B /* ExtendCameraBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendCameraBaseView.m; sourceTree = "<group>"; };
+		2799CAE51D3BD08900CA533B /* SimpleEditMultipleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleEditMultipleController.h; sourceTree = "<group>"; };
+		2799CAE61D3BD08900CA533B /* SimpleEditMultipleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleEditMultipleController.m; sourceTree = "<group>"; };
+		27B4297B1D49DF5B00F27DC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TuSDK.strings; sourceTree = "<group>"; };
+		27B4297C1D49DF5D00F27DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TuSDK.strings; sourceTree = "<group>"; };
+		27B4297E1D49E94E00F27DC6 /* libSocialWhatsapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWhatsapp.a; sourceTree = "<group>"; };
+		27B4297F1D49E94E00F27DC6 /* UMSocialWhatsappHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWhatsappHandler.h; sourceTree = "<group>"; };
+		27D37AE81D48A10700B4C8F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TuSDK.strings"; sourceTree = "<group>"; };
+		27F0A8CA1D390D2900407292 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../Library/Developer/Xcode/DerivedData/PhotoShare-elkdrlqwvrfztjeqtfaywiahbmue/Build/Products/Debug-iphoneos/Masonry/libMasonry.a"; sourceTree = "<group>"; };
+		711870D6D6CEE9D98E00C637 /* Pods-PhotoShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoShare/Pods-PhotoShare.release.xcconfig"; sourceTree = "<group>"; };
+		F42F9ABFAF47A5927C351CAD /* libPods-PhotoShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7783B2B0852AD1DCDC509E /* Pods-PhotoShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoShare/Pods-PhotoShare.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		276AFD5A1D35C1CC00D709EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F0A8CB1D390D2900407292 /* libMasonry.a in Frameworks */,
+				276688081D37CB4400D1FB3D /* Social.framework in Frameworks */,
+				27B429801D49E94E00F27DC6 /* libSocialWhatsapp.a in Frameworks */,
+				274333FB1D3798A400DB5438 /* libSocialLine.a in Frameworks */,
+				272F7A5A1D3666A0008223EB /* libSocialQQ.a in Frameworks */,
+				276AFDC91D36529900D709EB /* libz.tbd in Frameworks */,
+				276AFDC71D36528F00D709EB /* libstdc++.tbd in Frameworks */,
+				276AFDC51D36527F00D709EB /* CoreTelephony.framework in Frameworks */,
+				276AFDC31D36527200D709EB /* libsqlite3.tbd in Frameworks */,
+				272F7A6D1D3666B8008223EB /* libSocialSinaSSO.a in Frameworks */,
+				276AFDC11D36526700D709EB /* CoreGraphics.framework in Frameworks */,
+				276AFDBF1D36524700D709EB /* libiconv.tbd in Frameworks */,
+				272F7A5B1D3666A0008223EB /* TencentOpenAPI.framework in Frameworks */,
+				272F7A521D36667C008223EB /* libSocialWechat.a in Frameworks */,
+				272F7A6E1D3666B8008223EB /* libWeiboSDK.a in Frameworks */,
+				276AFDBD1D36523100D709EB /* Security.framework in Frameworks */,
+				276AFDBB1D3650F300D709EB /* ImageIO.framework in Frameworks */,
+				276AFDB91D3650E100D709EB /* SystemConfiguration.framework in Frameworks */,
+				2702B8761D477A3300273917 /* libSocialInstagram.a in Frameworks */,
+				276AFD881D361B1500D709EB /* TuSDK.framework in Frameworks */,
+				276AFD891D361B1500D709EB /* TuSDKGeeV1.framework in Frameworks */,
+				276AFDAE1D36504000D709EB /* libUMSocial_Sdk_5.2.1.a in Frameworks */,
+				276AFD851D361AEA00D709EB /* GPUImage.framework in Frameworks */,
+				272F7A531D36667C008223EB /* libWeChatSDK.a in Frameworks */,
+				2DED55B7352BAF8135649180 /* libPods-PhotoShare.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D84B146F0F384BD0DB1411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276688071D37CB4400D1FB3D /* Social.framework */,
+				276AFDC81D36529900D709EB /* libz.tbd */,
+				276AFDC61D36528F00D709EB /* libstdc++.tbd */,
+				276AFDC41D36527F00D709EB /* CoreTelephony.framework */,
+				276AFDC21D36527200D709EB /* libsqlite3.tbd */,
+				276AFDC01D36526600D709EB /* CoreGraphics.framework */,
+				276AFDBE1D36524700D709EB /* libiconv.tbd */,
+				276AFDBC1D36523100D709EB /* Security.framework */,
+				276AFDBA1D3650F300D709EB /* ImageIO.framework */,
+				276AFDB81D3650E100D709EB /* SystemConfiguration.framework */,
+				276AFD861D361B1500D709EB /* TuSDK.framework */,
+				276AFD871D361B1500D709EB /* TuSDKGeeV1.framework */,
+				276AFD841D361AEA00D709EB /* GPUImage.framework */,
+				27F0A8CA1D390D2900407292 /* libMasonry.a */,
+				F42F9ABFAF47A5927C351CAD /* libPods-PhotoShare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2702B8731D477A3300273917 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				2702B8741D477A3300273917 /* libSocialInstagram.a */,
+				2702B8751D477A3300273917 /* UMSocialInstagramHandler.h */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		272F7A4A1D36667C008223EB /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				272F7A4B1D36667C008223EB /* libSocialWechat.a */,
+				272F7A4C1D36667C008223EB /* libWeChatSDK.a */,
+				272F7A4D1D36667C008223EB /* README.txt */,
+				272F7A4E1D36667C008223EB /* UMSocialWechatHandler.h */,
+				272F7A4F1D36667C008223EB /* WechatAuthSDK.h */,
+				272F7A501D36667C008223EB /* WXApi.h */,
+				272F7A511D36667C008223EB /* WXApiObject.h */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		272F7A551D3666A0008223EB /* TencentOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				272F7A561D3666A0008223EB /* libSocialQQ.a */,
+				272F7A571D3666A0008223EB /* TencentOpenAPI.framework */,
+				272F7A581D3666A0008223EB /* TencentOpenApi_IOS_Bundle.bundle */,
+				272F7A591D3666A0008223EB /* UMSocialQQHandler.h */,
+			);
+			path = TencentOpenAPI;
+			sourceTree = "<group>";
+		};
+		272F7A5D1D3666B8008223EB /* SinaSSO */ = {
+			isa = PBXGroup;
+			children = (
+				272F7A5E1D3666B8008223EB /* libSocialSinaSSO.a */,
+				272F7A5F1D3666B8008223EB /* libWeiboSDK.a */,
+				272F7A601D3666B8008223EB /* UMSocialSinaSSOHandler.h */,
+				272F7A611D3666B8008223EB /* WBHttpRequest+WeiboGame.h */,
+				272F7A621D3666B8008223EB /* WBHttpRequest+WeiboShare.h */,
+				272F7A631D3666B8008223EB /* WBHttpRequest+WeiboToken.h */,
+				272F7A641D3666B8008223EB /* WBHttpRequest+WeiboUser.h */,
+				272F7A651D3666B8008223EB /* WBHttpRequest.h */,
+				272F7A661D3666B8008223EB /* WBSDKBasicButton.h */,
+				272F7A671D3666B8008223EB /* WBSDKCommentButton.h */,
+				272F7A681D3666B8008223EB /* WBSDKRelationshipButton.h */,
+				272F7A691D3666B8008223EB /* WeiboSDK+Statistics.h */,
+				272F7A6A1D3666B8008223EB /* WeiboSDK.bundle */,
+				272F7A6B1D3666B8008223EB /* WeiboSDK.h */,
+				272F7A6C1D3666B8008223EB /* WeiboUser.h */,
+			);
+			path = SinaSSO;
+			sourceTree = "<group>";
+		};
+		27370CC71D5300B900E074A5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				273C07CB1D4D0A7B00A41682 /* CLImageEditor */,
+				276AFD921D36503F00D709EB /* UMSocial_Sdk_5.2.1 */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		273C07CB1D4D0A7B00A41682 /* CLImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				273C08401D4D0A8600A41682 /* CLTextTool */,
+				273C07CC1D4D0A7B00A41682 /* CLImageEditor.bundle */,
+				273C07CD1D4D0A7B00A41682 /* CLImageEditor.h */,
+				273C07CE1D4D0A7B00A41682 /* CLImageEditor.m */,
+				273C07CF1D4D0A7B00A41682 /* CLImageEditorTheme.h */,
+				273C07D01D4D0A7B00A41682 /* CLImageEditorTheme.m */,
+				273C07D11D4D0A7B00A41682 /* CLImageToolInfo.h */,
+				273C07D21D4D0A7B00A41682 /* CLImageToolInfo.m */,
+				273C07D31D4D0A7B00A41682 /* ImageTools */,
+				273C08101D4D0A7B00A41682 /* Utils */,
+				273C081B1D4D0A7B00A41682 /* ViewController */,
+			);
+			path = CLImageEditor;
+			sourceTree = "<group>";
+		};
+		273C07D31D4D0A7B00A41682 /* ImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				273C07D41D4D0A7B00A41682 /* CLAdjustmentTool */,
+				273C07D71D4D0A7B00A41682 /* CLBlurTool */,
+				273C07DA1D4D0A7B00A41682 /* CLClippingTool */,
+				273C07DD1D4D0A7B00A41682 /* CLDrawTool */,
+				273C07E01D4D0A7B00A41682 /* CLEffectTool */,
+				273C07F41D4D0A7B00A41682 /* CLFilterTool */,
+				273C07F91D4D0A7B00A41682 /* CLImageToolBase.h */,
+				273C07FA1D4D0A7B00A41682 /* CLImageToolBase.m */,
+				273C07FB1D4D0A7B00A41682 /* CLRotateTool */,
+				273C07FE1D4D0A7B00A41682 /* CLToneCurveTool */,
+				273C08011D4D0A7B00A41682 /* ToolSettings */,
+			);
+			path = ImageTools;
+			sourceTree = "<group>";
+		};
+		273C07D41D4D0A7B00A41682 /* CLAdjustmentTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07D51D4D0A7B00A41682 /* CLAdjustmentTool.h */,
+				273C07D61D4D0A7B00A41682 /* CLAdjustmentTool.m */,
+			);
+			path = CLAdjustmentTool;
+			sourceTree = "<group>";
+		};
+		273C07D71D4D0A7B00A41682 /* CLBlurTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07D81D4D0A7B00A41682 /* CLBlurTool.h */,
+				273C07D91D4D0A7B00A41682 /* CLBlurTool.m */,
+			);
+			path = CLBlurTool;
+			sourceTree = "<group>";
+		};
+		273C07DA1D4D0A7B00A41682 /* CLClippingTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07DB1D4D0A7B00A41682 /* CLClippingTool.h */,
+				273C07DC1D4D0A7B00A41682 /* CLClippingTool.m */,
+			);
+			path = CLClippingTool;
+			sourceTree = "<group>";
+		};
+		273C07DD1D4D0A7B00A41682 /* CLDrawTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07DE1D4D0A7B00A41682 /* CLDrawTool.h */,
+				273C07DF1D4D0A7B00A41682 /* CLDrawTool.m */,
+			);
+			path = CLDrawTool;
+			sourceTree = "<group>";
+		};
+		273C07E01D4D0A7B00A41682 /* CLEffectTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07E11D4D0A7B00A41682 /* CLEffect */,
+				273C07F01D4D0A7B00A41682 /* CLEffectBase.h */,
+				273C07F11D4D0A7B00A41682 /* CLEffectBase.m */,
+				273C07F21D4D0A7B00A41682 /* CLEffectTool.h */,
+				273C07F31D4D0A7B00A41682 /* CLEffectTool.m */,
+			);
+			path = CLEffectTool;
+			sourceTree = "<group>";
+		};
+		273C07E11D4D0A7B00A41682 /* CLEffect */ = {
+			isa = PBXGroup;
+			children = (
+				273C07E21D4D0A7B00A41682 /* CLBloomEffect.h */,
+				273C07E31D4D0A7B00A41682 /* CLBloomEffect.m */,
+				273C07E41D4D0A7B00A41682 /* CLGloomEffect.h */,
+				273C07E51D4D0A7B00A41682 /* CLGloomEffect.m */,
+				273C07E61D4D0A7B00A41682 /* CLHighlightShadowEffect.h */,
+				273C07E71D4D0A7B00A41682 /* CLHighlightShadowEffect.m */,
+				273C07E81D4D0A7B00A41682 /* CLHueEffect.h */,
+				273C07E91D4D0A7B00A41682 /* CLHueEffect.m */,
+				273C07EA1D4D0A7B00A41682 /* CLPixellateEffect.h */,
+				273C07EB1D4D0A7B00A41682 /* CLPixellateEffect.m */,
+				273C07EC1D4D0A7B00A41682 /* CLPosterizeEffect.h */,
+				273C07ED1D4D0A7B00A41682 /* CLPosterizeEffect.m */,
+				273C07EE1D4D0A7B00A41682 /* CLSpotEffect.h */,
+				273C07EF1D4D0A7B00A41682 /* CLSpotEffect.m */,
+			);
+			path = CLEffect;
+			sourceTree = "<group>";
+		};
+		273C07F41D4D0A7B00A41682 /* CLFilterTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07F51D4D0A7B00A41682 /* CLFilterBase.h */,
+				273C07F61D4D0A7B00A41682 /* CLFilterBase.m */,
+				273C07F71D4D0A7B00A41682 /* CLFilterTool.h */,
+				273C07F81D4D0A7B00A41682 /* CLFilterTool.m */,
+			);
+			path = CLFilterTool;
+			sourceTree = "<group>";
+		};
+		273C07FB1D4D0A7B00A41682 /* CLRotateTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07FC1D4D0A7B00A41682 /* CLRotateTool.h */,
+				273C07FD1D4D0A7B00A41682 /* CLRotateTool.m */,
+			);
+			path = CLRotateTool;
+			sourceTree = "<group>";
+		};
+		273C07FE1D4D0A7B00A41682 /* CLToneCurveTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C07FF1D4D0A7B00A41682 /* CLToneCurveTool.h */,
+				273C08001D4D0A7B00A41682 /* CLToneCurveTool.m */,
+			);
+			path = CLToneCurveTool;
+			sourceTree = "<group>";
+		};
+		273C08011D4D0A7B00A41682 /* ToolSettings */ = {
+			isa = PBXGroup;
+			children = (
+				273C08021D4D0A7B00A41682 /* CLCircleView.h */,
+				273C08031D4D0A7B00A41682 /* CLCircleView.m */,
+				273C08041D4D0A7B00A41682 /* CLColorPickerView.h */,
+				273C08051D4D0A7B00A41682 /* CLColorPickerView.m */,
+				273C08061D4D0A7B00A41682 /* CLImageEditorTheme+Private.h */,
+				273C08071D4D0A7B00A41682 /* CLImageEditorTheme+Private.m */,
+				273C08081D4D0A7B00A41682 /* CLImageToolInfo+Private.h */,
+				273C08091D4D0A7B00A41682 /* CLImageToolInfo+Private.m */,
+				273C080A1D4D0A7B00A41682 /* CLImageToolProtocol.h */,
+				273C080B1D4D0A7B00A41682 /* CLImageToolSettings.h */,
+				273C080C1D4D0A7B00A41682 /* CLToolbarMenuItem.h */,
+				273C080D1D4D0A7B00A41682 /* CLToolbarMenuItem.m */,
+				273C080E1D4D0A7B00A41682 /* UIView+CLImageToolInfo.h */,
+				273C080F1D4D0A7B00A41682 /* UIView+CLImageToolInfo.m */,
+			);
+			path = ToolSettings;
+			sourceTree = "<group>";
+		};
+		273C08101D4D0A7B00A41682 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				273C08111D4D0A7B00A41682 /* CLClassList.h */,
+				273C08121D4D0A7B00A41682 /* CLClassList.m */,
+				273C08131D4D0A7B00A41682 /* CLSplineInterpolator.h */,
+				273C08141D4D0A7B00A41682 /* CLSplineInterpolator.m */,
+				273C08151D4D0A7B00A41682 /* UIDevice+SystemVersion.h */,
+				273C08161D4D0A7B00A41682 /* UIDevice+SystemVersion.m */,
+				273C08171D4D0A7B00A41682 /* UIImage+Utility.h */,
+				273C08181D4D0A7B00A41682 /* UIImage+Utility.m */,
+				273C08191D4D0A7B00A41682 /* UIView+Frame.h */,
+				273C081A1D4D0A7B00A41682 /* UIView+Frame.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		273C081B1D4D0A7B00A41682 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				273C081C1D4D0A7B00A41682 /* _CLImageEditorViewController.h */,
+				273C081D1D4D0A7B00A41682 /* _CLImageEditorViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		273C08401D4D0A8600A41682 /* CLTextTool */ = {
+			isa = PBXGroup;
+			children = (
+				273C08411D4D0A8600A41682 /* CLFontPickerView.h */,
+				273C08421D4D0A8600A41682 /* CLFontPickerView.m */,
+				273C08431D4D0A8600A41682 /* CLPickerDrum.h */,
+				273C08441D4D0A8600A41682 /* CLPickerDrum.m */,
+				273C08451D4D0A8600A41682 /* CLPickerView.h */,
+				273C08461D4D0A8600A41682 /* CLPickerView.m */,
+				273C08471D4D0A8600A41682 /* CLTextLabel.h */,
+				273C08481D4D0A8600A41682 /* CLTextLabel.m */,
+				273C08491D4D0A8600A41682 /* CLTextSettingView.h */,
+				273C084A1D4D0A8600A41682 /* CLTextSettingView.m */,
+				273C084B1D4D0A8600A41682 /* CLTextTool.h */,
+				273C084C1D4D0A8600A41682 /* CLTextTool.m */,
+			);
+			path = CLTextTool;
+			sourceTree = "<group>";
+		};
+		274333F81D3798A400DB5438 /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				274333F91D3798A400DB5438 /* libSocialLine.a */,
+				274333FA1D3798A400DB5438 /* UMSocialLineHandler.h */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
+		276AFD541D35C1CC00D709EB = {
+			isa = PBXGroup;
+			children = (
+				276AFD5F1D35C1CC00D709EB /* PhotoShare */,
+				276AFD5E1D35C1CC00D709EB /* Products */,
+				454C07DDEB7613137581FF53 /* Pods */,
+				03D84B146F0F384BD0DB1411 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		276AFD5E1D35C1CC00D709EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				276AFD5D1D35C1CC00D709EB /* 特写美刻.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		276AFD5F1D35C1CC00D709EB /* PhotoShare */ = {
+			isa = PBXGroup;
+			children = (
+				270A54641D6BF388007AA496 /* UIColor+Silversand.h */,
+				270A54651D6BF388007AA496 /* UIColor+Silversand.m */,
+				2799A62B1D6A2C3B00F45F7E /* UIColor+Puertorico.h */,
+				2799A62C1D6A2C3B00F45F7E /* UIColor+Puertorico.m */,
+				2799A6251D6A235900F45F7E /* UIColor+Viking.h */,
+				2799A6261D6A235900F45F7E /* UIColor+Viking.m */,
+				2799A6221D6A180F00F45F7E /* UIView+Extension.h */,
+				2799A6231D6A180F00F45F7E /* UIView+Extension.m */,
+				2799A61D1D6A0DDF00F45F7E /* Views */,
+				27370CC71D5300B900E074A5 /* Lib */,
+				276AFD631D35C1CC00D709EB /* AppDelegate.h */,
+				276AFD641D35C1CC00D709EB /* AppDelegate.m */,
+				276AFD6C1D35C1CC00D709EB /* Assets.xcassets */,
+				276AFD711D35C1CC00D709EB /* Info.plist */,
+				276AFD6E1D35C1CC00D709EB /* LaunchScreen.storyboard */,
+				276AFD8A1D361B7A00D709EB /* Resource */,
+				2799CADC1D3B935400CA533B /* RootViewController.h */,
+				2799CADD1D3B935400CA533B /* RootViewController.m */,
+				2799CAE51D3BD08900CA533B /* SimpleEditMultipleController.h */,
+				2799CAE61D3BD08900CA533B /* SimpleEditMultipleController.m */,
+				276AFD601D35C1CC00D709EB /* Supporting Files */,
+				276AB1671D44AAC6004F363B /* SimpleEditStickerController.h */,
+				276AB1681D44AAC6004F363B /* SimpleEditStickerController.m */,
+				273C085B1D4E26C500A41682 /* SimpleEditFilterController.h */,
+				273C085C1D4E26C500A41682 /* SimpleEditFilterController.m */,
+				273C085E1D4E27BA00A41682 /* SimpleEditSkinController.h */,
+				273C085F1D4E27BA00A41682 /* SimpleEditSkinController.m */,
+				2799A6281D6A28B100F45F7E /* ExtendEditMultipleView.h */,
+				2799A6291D6A28B100F45F7E /* ExtendEditMultipleView.m */,
+				270A54611D6BF230007AA496 /* UIColor+Hex.h */,
+				270A54621D6BF230007AA496 /* UIColor+Hex.m */,
+				270A547F1D6C3153007AA496 /* SimpleEditCuterController.h */,
+				270A54801D6C3153007AA496 /* SimpleEditCuterController.m */,
+				274189071D6D3C43005F3F3F /* ExtendEditSkinView.h */,
+				274189081D6D3C43005F3F3F /* ExtendEditSkinView.m */,
+			);
+			path = PhotoShare;
+			sourceTree = "<group>";
+		};
+		276AFD601D35C1CC00D709EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				276AFD611D35C1CC00D709EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		276AFD8A1D361B7A00D709EB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				276AB16E1D44B289004F363B /* TuSDK.strings */,
+				276AFD901D361C3500D709EB /* TuSDK.bundle */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		276AFD921D36503F00D709EB /* UMSocial_Sdk_5.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				27B4297D1D49E94E00F27DC6 /* Whatsapp */,
+				2702B8731D477A3300273917 /* Instagram */,
+				274333F81D3798A400DB5438 /* Line */,
+				272F7A5D1D3666B8008223EB /* SinaSSO */,
+				272F7A551D3666A0008223EB /* TencentOpenAPI */,
+				272F7A4A1D36667C008223EB /* Wechat */,
+				276AFD931D36503F00D709EB /* UMSocialLocalizable.strings */,
+				276AFD951D36504000D709EB /* Header */,
+				276AFDA11D36504000D709EB /* libUMSocial_Sdk_5.2.1.a */,
+				276AFDA21D36504000D709EB /* SocialSDKXib */,
+				276AFDAB1D36504000D709EB /* UMSocialSDKResourcesNew.bundle */,
+			);
+			path = UMSocial_Sdk_5.2.1;
+			sourceTree = "<group>";
+		};
+		276AFD951D36504000D709EB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				276AFD961D36504000D709EB /* UMSocial.h */,
+				276AFD971D36504000D709EB /* UMSocialAccountManager.h */,
+				276AFD981D36504000D709EB /* UMSocialBar.h */,
+				276AFD991D36504000D709EB /* UMSocialConfig.h */,
+				276AFD9A1D36504000D709EB /* UMSocialControllerService.h */,
+				276AFD9B1D36504000D709EB /* UMSocialControllerServiceComment.h */,
+				276AFD9C1D36504000D709EB /* UMSocialData.h */,
+				276AFD9D1D36504000D709EB /* UMSocialDataService.h */,
+				276AFD9E1D36504000D709EB /* UMSocialSnsData.h */,
+				276AFD9F1D36504000D709EB /* UMSocialSnsPlatformManager.h */,
+				276AFDA01D36504000D709EB /* UMSocialSnsService.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		276AFDA21D36504000D709EB /* SocialSDKXib */ = {
+			isa = PBXGroup;
+			children = (
+				276AFDA31D36504000D709EB /* UMSCommentDetailController.xib */,
+				276AFDA41D36504000D709EB /* UMSCommentInputController.xib */,
+				276AFDA51D36504000D709EB /* UMSCommentInputControlleriPad.xib */,
+				276AFDA61D36504000D709EB /* UMShareEditViewController.xib */,
+				276AFDA71D36504000D709EB /* UMShareEditViewControlleriPad.xib */,
+				276AFDA81D36504000D709EB /* UMSLoginViewController.xib */,
+				276AFDA91D36504000D709EB /* UMSnsAccountViewController.xib */,
+				276AFDAA1D36504000D709EB /* UMSShareListController.xib */,
+			);
+			path = SocialSDKXib;
+			sourceTree = "<group>";
+		};
+		2799A61D1D6A0DDF00F45F7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2799A61E1D6A0DE700F45F7E /* Carema */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2799A61E1D6A0DE700F45F7E /* Carema */ = {
+			isa = PBXGroup;
+			children = (
+				273C08581D4D787100A41682 /* ExtendCameraConfigView.h */,
+				273C08591D4D787100A41682 /* ExtendCameraConfigView.m */,
+				2799CAE21D3BCCE900CA533B /* ExtendCameraBaseView.h */,
+				2799CAE31D3BCCE900CA533B /* ExtendCameraBaseView.m */,
+				2799A61F1D6A0E2B00F45F7E /* ExtendCameraBottomView.h */,
+				2799A6201D6A0E2B00F45F7E /* ExtendCameraBottomView.m */,
+			);
+			name = Carema;
+			sourceTree = "<group>";
+		};
+		27B4297D1D49E94E00F27DC6 /* Whatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				27B4297E1D49E94E00F27DC6 /* libSocialWhatsapp.a */,
+				27B4297F1D49E94E00F27DC6 /* UMSocialWhatsappHandler.h */,
+			);
+			path = Whatsapp;
+			sourceTree = "<group>";
+		};
+		454C07DDEB7613137581FF53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE7783B2B0852AD1DCDC509E /* Pods-PhotoShare.debug.xcconfig */,
+				711870D6D6CEE9D98E00C637 /* Pods-PhotoShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		276AFD5C1D35C1CC00D709EB /* 特写美刻 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276AFD741D35C1CC00D709EB /* Build configuration list for PBXNativeTarget "特写美刻" */;
+			buildPhases = (
+				5C2814AB54590AC0E11B657B /* [CP] Check Pods Manifest.lock */,
+				276AFD591D35C1CC00D709EB /* Sources */,
+				276AFD5A1D35C1CC00D709EB /* Frameworks */,
+				276AFD5B1D35C1CC00D709EB /* Resources */,
+				7D1C45687D2EE6940A836866 /* [CP] Embed Pods Frameworks */,
+				035BB4048479086A7D6C5D00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "特写美刻";
+			productName = PhotoShare;
+			productReference = 276AFD5D1D35C1CC00D709EB /* 特写美刻.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		276AFD551D35C1CC00D709EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = dd;
+				TargetAttributes = {
+					276AFD5C1D35C1CC00D709EB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 276AFD581D35C1CC00D709EB /* Build configuration list for PBXProject "PhotoShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 276AFD541D35C1CC00D709EB;
+			productRefGroup = 276AFD5E1D35C1CC00D709EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				276AFD5C1D35C1CC00D709EB /* 特写美刻 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		276AFD5B1D35C1CC00D709EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272F7A5C1D3666A0008223EB /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				276AFDB31D36504000D709EB /* UMShareEditViewControlleriPad.xib in Resources */,
+				273C081E1D4D0A7B00A41682 /* CLImageEditor.bundle in Resources */,
+				276AFDB51D36504000D709EB /* UMSnsAccountViewController.xib in Resources */,
+				276AFDB01D36504000D709EB /* UMSCommentInputController.xib in Resources */,
+				276AFDAF1D36504000D709EB /* UMSCommentDetailController.xib in Resources */,
+				272F7A541D36667C008223EB /* README.txt in Resources */,
+				276AFD701D35C1CC00D709EB /* LaunchScreen.storyboard in Resources */,
+				276AFDB71D36504000D709EB /* UMSocialSDKResourcesNew.bundle in Resources */,
+				276AFDB11D36504000D709EB /* UMSCommentInputControlleriPad.xib in Resources */,
+				276AFDB21D36504000D709EB /* UMShareEditViewController.xib in Resources */,
+				276AFDB61D36504000D709EB /* UMSShareListController.xib in Resources */,
+				276AB16C1D44B289004F363B /* TuSDK.strings in Resources */,
+				276AFDAD1D36504000D709EB /* UMSocialLocalizable.strings in Resources */,
+				272F7A6F1D3666B8008223EB /* WeiboSDK.bundle in Resources */,
+				276AFD6D1D35C1CC00D709EB /* Assets.xcassets in Resources */,
+				276AFD911D361C3500D709EB /* TuSDK.bundle in Resources */,
+				276AFDB41D36504000D709EB /* UMSLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		035BB4048479086A7D6C5D00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoShare/Pods-PhotoShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C2814AB54590AC0E11B657B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1C45687D2EE6940A836866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoShare/Pods-PhotoShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		276AFD591D35C1CC00D709EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273C08291D4D0A7B00A41682 /* CLHueEffect.m in Sources */,
+				273C08241D4D0A7B00A41682 /* CLClippingTool.m in Sources */,
+				2799CAE41D3BCCE900CA533B /* ExtendCameraBaseView.m in Sources */,
+				276AB1691D44AAC6004F363B /* SimpleEditStickerController.m in Sources */,
+				273C08201D4D0A7B00A41682 /* CLImageEditorTheme.m in Sources */,
+				273C082A1D4D0A7B00A41682 /* CLPixellateEffect.m in Sources */,
+				273C084F1D4D0A8600A41682 /* CLPickerView.m in Sources */,
+				273C082D1D4D0A7B00A41682 /* CLEffectBase.m in Sources */,
+				273C08321D4D0A7B00A41682 /* CLRotateTool.m in Sources */,
+				273C08271D4D0A7B00A41682 /* CLGloomEffect.m in Sources */,
+				2799A6271D6A235900F45F7E /* UIColor+Viking.m in Sources */,
+				273C085D1D4E26C500A41682 /* SimpleEditFilterController.m in Sources */,
+				273C08391D4D0A7B00A41682 /* UIView+CLImageToolInfo.m in Sources */,
+				270A54631D6BF230007AA496 /* UIColor+Hex.m in Sources */,
+				2799A6211D6A0E2B00F45F7E /* ExtendCameraBottomView.m in Sources */,
+				273C08281D4D0A7B00A41682 /* CLHighlightShadowEffect.m in Sources */,
+				273C08501D4D0A8600A41682 /* CLTextLabel.m in Sources */,
+				273C082F1D4D0A7B00A41682 /* CLFilterBase.m in Sources */,
+				273C083E1D4D0A7B00A41682 /* UIView+Frame.m in Sources */,
+				2799CAE71D3BD08900CA533B /* SimpleEditMultipleController.m in Sources */,
+				273C083B1D4D0A7B00A41682 /* CLSplineInterpolator.m in Sources */,
+				273C084E1D4D0A8600A41682 /* CLPickerDrum.m in Sources */,
+				2799A6241D6A180F00F45F7E /* UIView+Extension.m in Sources */,
+				273C08261D4D0A7B00A41682 /* CLBloomEffect.m in Sources */,
+				2799CADE1D3B935400CA533B /* RootViewController.m in Sources */,
+				273C08251D4D0A7B00A41682 /* CLDrawTool.m in Sources */,
+				273C08361D4D0A7B00A41682 /* CLImageEditorTheme+Private.m in Sources */,
+				273C084D1D4D0A8600A41682 /* CLFontPickerView.m in Sources */,
+				2799A62D1D6A2C3B00F45F7E /* UIColor+Puertorico.m in Sources */,
+				270A54811D6C3153007AA496 /* SimpleEditCuterController.m in Sources */,
+				273C08221D4D0A7B00A41682 /* CLAdjustmentTool.m in Sources */,
+				273C082E1D4D0A7B00A41682 /* CLEffectTool.m in Sources */,
+				273C083D1D4D0A7B00A41682 /* UIImage+Utility.m in Sources */,
+				273C08351D4D0A7B00A41682 /* CLColorPickerView.m in Sources */,
+				276AFD651D35C1CC00D709EB /* AppDelegate.m in Sources */,
+				273C08601D4E27BA00A41682 /* SimpleEditSkinController.m in Sources */,
+				273C08381D4D0A7B00A41682 /* CLToolbarMenuItem.m in Sources */,
+				273C08371D4D0A7B00A41682 /* CLImageToolInfo+Private.m in Sources */,
+				273C08341D4D0A7B00A41682 /* CLCircleView.m in Sources */,
+				2799A62A1D6A28B100F45F7E /* ExtendEditMultipleView.m in Sources */,
+				273C08331D4D0A7B00A41682 /* CLToneCurveTool.m in Sources */,
+				273C083A1D4D0A7B00A41682 /* CLClassList.m in Sources */,
+				273C08231D4D0A7B00A41682 /* CLBlurTool.m in Sources */,
+				273C08311D4D0A7B00A41682 /* CLImageToolBase.m in Sources */,
+				270A54661D6BF388007AA496 /* UIColor+Silversand.m in Sources */,
+				273C08511D4D0A8600A41682 /* CLTextSettingView.m in Sources */,
+				273C085A1D4D787100A41682 /* ExtendCameraConfigView.m in Sources */,
+				276AFD621D35C1CC00D709EB /* main.m in Sources */,
+				273C08521D4D0A8600A41682 /* CLTextTool.m in Sources */,
+				273C08301D4D0A7B00A41682 /* CLFilterTool.m in Sources */,
+				273C08211D4D0A7B00A41682 /* CLImageToolInfo.m in Sources */,
+				273C081F1D4D0A7B00A41682 /* CLImageEditor.m in Sources */,
+				274189091D6D3C43005F3F3F /* ExtendEditSkinView.m in Sources */,
+				273C083F1D4D0A7B00A41682 /* _CLImageEditorViewController.m in Sources */,
+				273C083C1D4D0A7B00A41682 /* UIDevice+SystemVersion.m in Sources */,
+				273C082B1D4D0A7B00A41682 /* CLPosterizeEffect.m in Sources */,
+				273C082C1D4D0A7B00A41682 /* CLSpotEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		276AB16E1D44B289004F363B /* TuSDK.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D37AE81D48A10700B4C8F6 /* zh-Hans */,
+				27B4297B1D49DF5B00F27DC6 /* en */,
+				27B4297C1D49DF5D00F27DC6 /* Base */,
+			);
+			name = TuSDK.strings;
+			sourceTree = "<group>";
+		};
+		276AFD6E1D35C1CC00D709EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276AFD6F1D35C1CC00D709EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		276AFD931D36503F00D709EB /* UMSocialLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				276AFD941D36503F00D709EB /* en */,
+				276AFDAC1D36504000D709EB /* zh-Hans */,
+			);
+			name = UMSocialLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		276AFD721D35C1CC00D709EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		276AFD731D35C1CC00D709EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276AFD751D35C1CC00D709EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7783B2B0852AD1DCDC509E /* Pods-PhotoShare.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoShare",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/TencentOpenAPI",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Facebook",
+				);
+				INFOPLIST_FILE = PhotoShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Wechat",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/TencentOpenAPI",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/SinaSSO",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Line",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Facebook",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Color-Picker-for-iOS",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Instagram",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Whatsapp",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CLImageEditor",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuangZhouXuanWu.iphoneEtion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		276AFD761D35C1CC00D709EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711870D6D6CEE9D98E00C637 /* Pods-PhotoShare.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoShare",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/TencentOpenAPI",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Facebook",
+				);
+				INFOPLIST_FILE = PhotoShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Wechat",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/TencentOpenAPI",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/SinaSSO",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Line",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Facebook",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Color-Picker-for-iOS",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Instagram",
+					"$(PROJECT_DIR)/PhotoShare/UMSocial_Sdk_5.2.1/Whatsapp",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/CLImageEditor",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GuangZhouXuanWu.iphoneEtion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		276AFD581D35C1CC00D709EB /* Build configuration list for PBXProject "PhotoShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276AFD721D35C1CC00D709EB /* Debug */,
+				276AFD731D35C1CC00D709EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276AFD741D35C1CC00D709EB /* Build configuration list for PBXNativeTarget "特写美刻" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276AFD751D35C1CC00D709EB /* Debug */,
+				276AFD761D35C1CC00D709EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 276AFD551D35C1CC00D709EB /* Project object */;
+}
