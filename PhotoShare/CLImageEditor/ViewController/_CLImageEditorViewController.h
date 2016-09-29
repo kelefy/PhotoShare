@@ -6,6 +6,7 @@
 //
 
 #import "CLImageEditor.h"
+#import "SimpleEditMultipleController.h"
 
 @interface _CLImageEditorViewController : CLImageEditor
 <UIScrollViewDelegate, UIBarPositioningDelegate>
@@ -17,7 +18,10 @@
 @property (nonatomic, weak) IBOutlet UIScrollView *menuView;
 @property (nonatomic, readonly) UIScrollView *scrollView;
 @property (copy) void(^OnDrawCompleteBlock)(UIImage *);
+@property (assign,nonatomic) NSInteger setupToosIdx;
 @property (nonatomic,assign) CGRect imageFrame;
+
+@property (nonatomic,weak) SimpleEditMultipleController *simpleEditMultipleController;
 
 - (IBAction)pushedCloseBtn:(id)sender;
 - (IBAction)pushedFinishBtn:(id)sender;

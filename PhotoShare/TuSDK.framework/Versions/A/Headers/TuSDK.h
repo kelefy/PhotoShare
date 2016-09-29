@@ -70,6 +70,7 @@
 
 #import "TuSDKPFAlbumViewControllerBase.h"
 #import "TuSDKPFAlbumMultipleViewControllerBase.h"
+#import "TuSDKPFPhotoPreviewControllerBase.h"
 #import "TuSDKPFCameraViewControllerBase.h"
 #import "TuSDKPFEditAdjustControllerBase.h"
 #import "TuSDKPFEditApertureControllerBase.h"
@@ -112,6 +113,9 @@
 #import "TuSDKPFStickerLocalPackage.h"
 #import "TuSDKPFBrushLocalPackage.h"
 #import "TuSDKTKStatistics.h"
+
+#import "TuSDKNKNetworkEngine.h"
+#import "UIImageView+TuSDKNetworkAdditions.h"
 
 /**
  *  SDK版本
@@ -175,6 +179,11 @@ extern NSString * const lsqFilterSampleExtension;
  *  进度信息提示
  */
 @property (nonatomic, retain) id<TuSDKICMessageHubInterface> messageHub;
+
+/**
+ *  使用 SSL 发送网络请求 (默认: YES)
+ */
+@property (nonatomic) BOOL useSSL;
 
 /**
  *  TuSDK 核心

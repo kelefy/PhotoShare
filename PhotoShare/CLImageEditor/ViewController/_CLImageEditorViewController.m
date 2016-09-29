@@ -71,6 +71,9 @@
 
 - (void)dealloc
 {
+#ifdef DEBUG
+    NSLog(@"dealloc _CLImageEditorViewController");
+#endif
     [_navigationBar removeFromSuperview];
 }
 
@@ -217,7 +220,12 @@
 //        [self refreshImageView];
     }
     
-    [self setupToolWithToolInfo:self.toolInfo.subtools[8]];
+//    CLImageToolInfo *tool = [self.toolInfo subToolInfoWithToolName:@"CLToneCurveTool" recursive:NO];
+//    tool.title = @"TestTitle";
+//    tool.available = NO;     // if available is set to NO, it is removed from the menu view.
+//    tool.dockedNumber = -1;
+//    [self setupToolWithToolInfo:self.toolInfo.subtools[8]];
+    [self setupToolWithToolInfo:self.toolInfo.subtools[self.setupToosIdx]];
 }
 
 - (void)didReceiveMemoryWarning

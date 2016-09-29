@@ -9,6 +9,7 @@
 "lsq_reset" = "重置";
 "lsq_cancel" = "取消";
 "lsq_setting" = "设置";
+"lsq_selected" = "选择";
 "lsq_loading_image" = "读取图片...";
 "lsq_downloading_image" = "正从iCloud下载图片...";
 "lsq_initing" = "正在初始化";
@@ -67,7 +68,9 @@
 "lsq_album_ALAssetsLibraryAccessGloballyDeniedError%@" = "无法访问相册.请在'设置->隐私->照片'设置 %@ 为打开状态.";
 "lsq_album_ALAssets_error_title" = "无法访问相册";
 "lsq_album_empty_selection_msg" = "请至少选择一张照片";
+"lsq_album_preview_selection_msg" = "请等待下载完成";
 "lsq_album_max_selection_msg" = "最多选择 %d 张照片";
+"lsq_album_preview_complete" = "完成(%lu/%lu)";
 
 // location
 "lsq_location_error_title" = "无法获取地理信息";
@@ -88,6 +91,10 @@
 "lsq_edit_processing" = "正在处理...";
 "lsq_edit_processed" = "处理完成";
 "lsq_edit_process_error" = "发生错误，请确认设备已联网";
+"lsq_edit_process_face_error_undetected" = "未检测到人脸";
+"lsq_edit_process_face_error_noAccess" = "人脸检测请求失败";
+"lsq_edit_process_face_error_moreThanOne" = "检测到多张人脸";
+
 "lsq_edit_step_prev" = "撤销";
 "lsq_edit_step_next" = "重做";
 "lsq_edit_auto_adjust" = "自动校色";
@@ -101,6 +108,9 @@
 "lsq_edit_cuter_ratio_2_3" = "2:3";
 "lsq_edit_cuter_ratio_3_4" = "3:4";
 "lsq_edit_cuter_ratio_9_16" = "9:16";
+"lsq_edit_cuter_ratio_3_2" = "3:2";
+"lsq_edit_cuter_ratio_4_3" = "4:3";
+"lsq_edit_cuter_ratio_16_9" = "16:9";
 "lsq_edit_title" = "编辑";
 "lsq_edit_multiple_title" = "美化图片";
 "lsq_edit_skin_title" = "美颜";
@@ -207,8 +217,15 @@
 "lsq_filter_Wintersunshine" = "冬日";
 
 // Filters Definition skin
+"lsq_filter_set_skinMultiple" = "多功能美肤";
+
 "lsq_filter_set_smoothing" = "润滑";
 "lsq_filter_set_whitening" = "白皙";
+"lsq_filter_set_skinColor" = "肤色";
+"lsq_filter_set_retouch" = "一键美颜";
+"lsq_filter_set_chinSize" = "瘦脸";
+"lsq_filter_set_eyeSize" = "大眼";
+
 "lsq_filter_set_blurSize" = "强度";
 "lsq_filter_set_blurWeight" = "权重";
 "lsq_filter_set_skinColorThreshold" = "肤色";
@@ -222,7 +239,6 @@
 "lsq_filter_set_highlights" = "高光";
 "lsq_filter_set_shadows" = "阴影";
 "lsq_filter_set_temperature" = "色温";
-"lsq_filter_set_skinColor" = "肤色";
 "lsq_filter_set_autumnColorThreshold" = "秋意";
 "lsq_filter_set_hue" = "色相";
 "lsq_filter_set_hueSpace" = "范围";

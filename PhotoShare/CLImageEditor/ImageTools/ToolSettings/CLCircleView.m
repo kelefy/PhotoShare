@@ -20,6 +20,10 @@
         
         self.borderColor = [UIColor clearColor];
         self.borderWidth = 0;
+        
+//        UIButton *btn = [[UIButton alloc]initWithFrame:frame];
+//        [btn setBackgroundImage:[UIImage imageNamed:@"circle_blue"] forState:UIControlStateNormal];
+//        [self addSubview:btn];
     }
     return self;
 }

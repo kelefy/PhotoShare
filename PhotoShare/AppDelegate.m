@@ -10,6 +10,10 @@
 #import <TuSDKGeeV1/TuSDKGeeV1.h>
 #import "RootViewController.h"
 
+#import <PgySDK/PgyManager.h>
+#import <PgyUpdate/PgyUpdateManager.h>
+#import "UIColor+Viking.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,7 +24,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // 初始化TuSDK
-    [TuSDK initSdkWithAppKey:@"dcac44cbea40b62a-00-m54up1"];
+    [TuSDK initSdkWithAppKey:@"965d5c64fe0ceaf7-02-7lryp1"];
     //调试日志
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
     
@@ -31,25 +35,17 @@
     self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:rootVc];
     [self.window makeKeyAndVisible];
     
+    
+    //初始化PGYSDK
+    //启动基本SDK
+    [[PgyManager sharedPgyManager] startManagerWithAppId:@"c9e20899c0461bbd1d4d33212ba26425"];
+    [[PgyManager sharedPgyManager] setThemeColor:[UIColor viking]];
+    //启动更新检查SDK
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"c9e20899c0461bbd1d4d33212ba26425"];
+    [[PgyUpdateManager sharedPgyManager] checkUpdate];
+    
+    
     return YES;
-    
-    //初始化友盟ShareSDK
-    //    [UMSocialData setAppKey:@"57861cdfe0f55a1107003adf"];
-    
-    //分享到line，只能分享纯文本消息或者纯图片消息
-    //    [UMSocialLineHandler openLineShare:UMSocialLineMessageTypeImage];
-    //Instagram
-    //    [UMSocialInstagramHandler openInstagramWithScale:NO paddingColor:[UIColor blackColor]];
-    //设置微信AppId、appSecret，分享url
-    //    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
-    //设置手机QQ 的AppId，Appkey，和分享URL，需要#import "UMSocialQQHandler.h"
-    //    [UMSocialQQHandler setQQWithAppId:@"1105498423" appKey:@"enkvbkYjV15Th2uO" url:@"http://img1.imgtn.bdimg.com/it/u=133570051,1582450962&fm=21&gp=0.jpg"];
-    //打开新浪微博的SSO开关，设置新浪微博回调地址，这里必须要和你在新浪微博后台设置的回调地址一致。需要 #import "UMSocialSinaSSOHandler.h"
-    //    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"532748952"
-    //                                              secret:@"ec5ed105e6a0f581698fff749e10b65e"
-    //                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
-    //分享到whatsapp，只能分享纯文本消息或者纯图片消息
-    //    [UMSocialWhatsappHandler openWhatsapp:UMSocialWhatsappMessageTypeImage];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

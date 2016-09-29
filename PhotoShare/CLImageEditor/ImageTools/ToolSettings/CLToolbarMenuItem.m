@@ -43,7 +43,6 @@
     if(self){
         UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
         [self addGestureRecognizer:gesture];
-        
         self.toolInfo = toolInfo;
     }
     return self;

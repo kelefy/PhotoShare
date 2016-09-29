@@ -11,12 +11,10 @@
 #import "SimpleEditMultipleController.h"
 #import "SimpleEditStickerController.h"
 #import "ExtendCameraConfigView.h"
-#import "ExtendCameraBottomView.h"
 #import "SimpleEditFilterController.h"
 #import "SimpleEditSkinController.h"
 #import "ExtendEditMultipleView.h"
 #import "SimpleEditCuterController.h"
-#import "ExtendEditSkinView.h"
 
 @interface RootViewController()<TuSDKPFCameraDelegate>
 
@@ -73,7 +71,6 @@
     // 视图类 (默认:TuSDKPFCameraView, 需要继承 TuSDKPFCameraView)
      opt.viewClazz = [ExtendCameraBaseView class];
     opt.configBarViewClazz = [ExtendCameraConfigView class];
-    opt.bottomBarViewClazz = [ExtendCameraBottomView class];
     
     // 默认相机控制栏视图类 (默认:TuSDKPFCameraConfigView, 需要继承 TuSDKPFCameraConfigView)
     // opt.configBarViewClazz = [TuSDKPFCameraConfigView class];
@@ -259,7 +256,6 @@
     _photoEditMultipleComponent.options.editCuterOptions.componentClazz = [SimpleEditCuterController class];
     _photoEditMultipleComponent.options.editFilterOptions.componentClazz = [SimpleEditFilterController class];
     _photoEditMultipleComponent.options.editSkinOptions.componentClazz = [SimpleEditSkinController class];
-    _photoEditMultipleComponent.options.editSkinOptions.viewClazz = [ExtendEditSkinView class];
     _photoEditMultipleComponent.inputImage = result.image;
     
     // NSString 类型，文件保存路径

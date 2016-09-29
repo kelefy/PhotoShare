@@ -37,6 +37,11 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSNotificationCenter *notiCenter = [NSNotificationCenter defaultCenter];
+    
+    // 注册一个监听事件。第三个参数的事件名， 系统用这个参数来区别不同事件。
+    [notiCenter addObserver:self selector:@selector(stickComplete:) name:@"stickComplete123" object:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -56,7 +61,7 @@
     if (!view) return;
     // !!!!!!!!!!!
     // 初始化视图,这里很重要
-    [view initView];
+    [view lsqInitView];
     view.backgroundColor = [UIColor silverSand];
     view.autoAdjustButton.hidden = YES;
     // 是否禁用操作步骤记录
@@ -82,14 +87,17 @@
     [btnFilter setBackgroundImage:[UIImage imageNamed:@"Filter"] forState:UIControlStateNormal];
 //    [_bottomView addSubview:btnFilter];
     
+    //美颜
     UIButton *btnEditSkin = [view.optionBar buildButtonWithActionType:lsqTuSDKCPEditActionSkin moduleCount:33];
     btnEditSkin.frame = CGRectMake(0, 0, 40, 40);
     [btnEditSkin addTarget:self action:@selector(onEditWithAction:) forControlEvents:UIControlEventTouchUpInside];
 //    [_bottomView addSubview:btnEditSkin];
     
+    //贴纸
     UIButton *btnSticker = [view.optionBar buildButtonWithActionType:lsqTuSDKCPEditActionSticker moduleCount:33];
     btnSticker.frame = CGRectMake(0, 0, 40, 40);
-    [btnSticker addTarget:self action:@selector(onEditWithAction:) forControlEvents:UIControlEventTouchUpInside];
+    [btnSticker addTarget:self action:@selector(onStickAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [btnSticker addTarget:self action:@selector(onEditWithAction:) forControlEvents:UIControlEventTouchUpInside];
 //    [_bottomView addSubview:btnSticker];
     [btnSticker setImage:nil forState:UIControlStateNormal];
     [btnSticker setStateNormalTitle:nil];
@@ -176,18 +184,37 @@
     _CLImageEditorViewController *editor = [[_CLImageEditorViewController alloc] initWithImage:self.defaultStyleView.imageView.image];
     editor.imageFrame = self.defaultStyleView.imageView.frame;
     editor.OnDrawCompleteBlock = ^(UIImage *drawImage){
-                [self setNavigationBarHidden:YES];
-                TuSDKResult *result = [TuSDKResult result];
-                result.image = drawImage;
-                [super saveToTempWithResult:result];
-                NSString *path = result.imagePath;
-                [super appendHistory:path];
-                self.displayImage = drawImage;
-                
-            };
-    [self presentViewController:editor animated:NO completion:^{
-    }];
-    
+        
+        [self setNavigationBarHidden:YES];
+        TuSDKResult *result = [TuSDKResult result];
+        result.image = drawImage;
+        [super saveToTempWithResult:result];
+        NSString *path = result.imagePath;
+        [super appendHistory:path];
+        self.displayImage = drawImage;
+    };
+    editor.setupToosIdx = 9;
+    [self presentViewController:editor animated:NO completion:nil];
+}
+
+-(void)onStickAction:(id)sender
+{
+    _CLImageEditorViewController *editor = [[_CLImageEditorViewController alloc] initWithImage:self.defaultStyleView.imageView.image];
+    editor.imageFrame = self.defaultStyleView.imageView.frame;
+    editor.setupToosIdx = 8;
+    editor.simpleEditMultipleController = self;
+    editor.OnDrawCompleteBlock = ^(UIImage *drawImage){
+        [self setNavigationBarHidden:YES];
+        TuSDKResult *result = [TuSDKResult result];
+        result.image = drawImage;
+        [super saveToTempWithResult:result];
+        NSString *path = result.imagePath;
+        [super appendHistory:path];
+        self.displayImage = drawImage;
+    };
+
+    [self presentViewController:editor animated:NO completion:nil];
+
 }
 
 -(void)onShareAction
@@ -202,9 +229,22 @@
     [super onEditWithAction:btn];
 }
 
--(void)onStickAction:(UIButton *)btn
+-(void)stickComplete:(NSNotification *)noti
 {
-    
+    UIImage *image = noti.object;
+//    TuSDKResult *result = [TuSDKResult result];
+//    result.image = image;
+//    [super saveToTempWithResult:result];
+//    NSString *path = result.imagePath;
+//    [super appendHistory:path];
+    [self setDisplayImage:image];
+    [self setInputImage:image];
+}
+
+-(void)dealloc
+{
+    // 移除当前对象监听的事件
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

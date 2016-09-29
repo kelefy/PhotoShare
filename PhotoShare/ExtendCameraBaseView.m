@@ -12,9 +12,9 @@
 
 @implementation ExtendCameraBaseView
 
-- (void)initView;
+- (void)lsqInitView
 {
-    [super initView];
+    [super lsqInitView];
     
     
     // 更开默认相机控制栏视图的属性

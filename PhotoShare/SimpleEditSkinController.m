@@ -28,15 +28,26 @@
     
     view.configView.backgroundColor = [UIColor puertoRico];
     view.bottomBar.backgroundColor = [UIColor viking];
-    view.configView.y += view.bottomBar.height;
+//    view.configView.y += view.bottomBar.height;
     
     [view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        if([obj isKindOfClass:[TuSDKICFilterImageViewWrap class]])
+        if([obj isKindOfClass:[TuSDKICFilterImageViewWrap class]]) //图片背景
         {
-            obj.height += view.bottomBar.height;
+//            obj.height += view.bottomBar.height;
             obj.backgroundColor = [UIColor silverSand];
-            *stop = YES;
+//            *stop = YES;
+        }
+        else if(idx==3||idx==4)
+        {
+            obj.backgroundColor = [UIColor viking];
+            
+            //取消滚动条
+            if([obj isKindOfClass:[TuSDKPFEditAdjustOptionBar class]])
+            {
+                TuSDKPFEditAdjustOptionBar *bar = (TuSDKPFEditAdjustOptionBar *)obj;
+                bar.wrapView.showsHorizontalScrollIndicator = NO;
+            }
         }
     }];
     

@@ -60,6 +60,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_photoListFragment = 0x202000,
     
     /**
+     * 相册照片预览控制器
+     */
+    tkc_photoListPreviewFragment = 0x202001,
+    
+    /**
      * 头像设置组件
      */
     tkc_avatarComponent = 0x300000,
@@ -120,6 +125,21 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editCuter_action_ratio_1_1 = 0x401044,
     
     /**
+     * 图片编辑裁切旋转控制器 显示比例 3_2
+     */
+    tkc_editCuter_action_ratio_3_2 = 0x401045,
+    
+    /**
+     * 图片编辑裁切旋转控制器 显示比例 4_3
+     */
+    tkc_editCuter_action_ratio_4_3 = 0x401046,
+    
+    /**
+     * 图片编辑裁切旋转控制器 显示比例 16_9
+     */
+    tkc_editCuter_action_ratio_16_9 = 0x401047,
+    
+    /**
      * 图片编辑入口控制器
      */
     tkc_editEntryFragment = 0x402000,
@@ -150,7 +170,7 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_editMultipleFragment = 0x407000,
     
     /**
-     * 美肤控制器
+     * 美肤控制器 增加 一键美颜，大眼瘦脸
      */
     tkc_editSkinFragment = 0x408000,
     
@@ -260,6 +280,21 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
     tkc_camera_action_ratio_1_1 = 0x501044,
     
     /**
+     * 相机控制器 显示比例 3_2
+     */
+    tkc_camera_action_ratio_3_2 = 0x501045,
+    
+    /**
+     * 相机控制器 显示比例 4_3
+     */
+    tkc_camera_action_ratio_4_3 = 0x501046,
+    
+    /**
+     * 相机控制器 显示比例 16_9
+     */
+    tkc_camera_action_ratio_16_9 = 0x501047,
+    
+    /**
      * 本地贴纸控制器
      */
     tkc_editStickerLocalFragment = 0x601000,
@@ -312,6 +347,11 @@ typedef NS_ENUM(NSInteger, TuSDKTKComponentType) {
      * 相机控制器 前置摄像头
      */
     tkc_video_action_faceing_front = 0x901022,
+    
+    
+    /**
+     * 0x91 - 0x93 已被TuSDKFaceID占用 详见TuSDKFaceID -> Secrets -> TuSDKPFStatistics.h
+     */
 };
 
 #pragma mark - TuSDKTKStatistics

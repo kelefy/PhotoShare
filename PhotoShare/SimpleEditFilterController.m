@@ -19,7 +19,10 @@
     [super configDefaultStyleView:view];
     view.bottomBar.backgroundColor = [UIColor viking];
     view.imageView.height += view.bottomBar.height;
-//    view.filterBar.backgroundColor = [UIColor silverSand];
+    
+    //参数栏底色
+    view.filterBar.bottomBar.backgroundColor = [UIColor viking];
+    view.filterBar.configView.backgroundColor = [UIColor viking];
 //    view.filterBar.configView.backgroundColor = [UIColor silverSand];
 //    view.filterBar.bottomBar.backgroundColor = [UIColor puertoRico];
     
