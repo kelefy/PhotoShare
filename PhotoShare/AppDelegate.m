@@ -9,9 +9,6 @@
 #import "AppDelegate.h"
 #import <TuSDKGeeV1/TuSDKGeeV1.h>
 #import "RootViewController.h"
-
-#import <PgySDK/PgyManager.h>
-#import <PgyUpdate/PgyUpdateManager.h>
 #import "UIColor+Viking.h"
 
 @interface AppDelegate ()
@@ -34,16 +31,6 @@
     // 初始化根控制器
     self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:rootVc];
     [self.window makeKeyAndVisible];
-    
-    
-    //初始化PGYSDK
-    //启动基本SDK
-    [[PgyManager sharedPgyManager] startManagerWithAppId:@"c9e20899c0461bbd1d4d33212ba26425"];
-    [[PgyManager sharedPgyManager] setThemeColor:[UIColor viking]];
-    //启动更新检查SDK
-    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:@"c9e20899c0461bbd1d4d33212ba26425"];
-    [[PgyUpdateManager sharedPgyManager] checkUpdate];
-    
     
     return YES;
 }
@@ -69,6 +56,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL*)url
+//{
+//    // 接受传过来的参数
+//    NSString *text = [[url host] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"打开啦"
+//                                                        message:text
+//                                                       delegate:nil
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//    [alertView show];
+//    return YES;
+//}
 
 //- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 //{

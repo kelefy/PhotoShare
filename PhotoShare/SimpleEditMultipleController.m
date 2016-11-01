@@ -38,10 +38,10 @@
 {
     [super viewDidLoad];
     
-    NSNotificationCenter *notiCenter = [NSNotificationCenter defaultCenter];
-    
-    // 注册一个监听事件。第三个参数的事件名， 系统用这个参数来区别不同事件。
-    [notiCenter addObserver:self selector:@selector(stickComplete:) name:@"stickComplete123" object:nil];
+//    NSNotificationCenter *notiCenter = [NSNotificationCenter defaultCenter];
+//    
+//    // 注册一个监听事件。第三个参数的事件名， 系统用这个参数来区别不同事件。
+//    [notiCenter addObserver:self selector:@selector(stickComplete:) name:@"stickComplete123" object:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -229,22 +229,16 @@
     [super onEditWithAction:btn];
 }
 
--(void)stickComplete:(NSNotification *)noti
-{
-    UIImage *image = noti.object;
-//    TuSDKResult *result = [TuSDKResult result];
-//    result.image = image;
-//    [super saveToTempWithResult:result];
-//    NSString *path = result.imagePath;
-//    [super appendHistory:path];
-    [self setDisplayImage:image];
-    [self setInputImage:image];
-}
-
--(void)dealloc
-{
-    // 移除当前对象监听的事件
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
+//-(void)stickComplete:(NSNotification *)noti
+//{
+//    UIImage *image = noti.object;
+////    TuSDKResult *result = [TuSDKResult result];
+////    result.image = image;
+////    [super saveToTempWithResult:result];
+////    NSString *path = result.imagePath;
+////    [super appendHistory:path];
+//    [self setDisplayImage:image];
+//    [self setInputImage:image];
+//}
 
 @end

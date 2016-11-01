@@ -10,6 +10,6 @@
 
 @interface SimpleEditMultipleController : TuSDKPFEditMultipleController
 
--(void)showHubErrorWithStatus:(NSString *)status;
+//-(void)showHubErrorWithStatus:(NSString *)status;
 
 @end

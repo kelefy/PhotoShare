@@ -189,7 +189,7 @@
     // opt.waterMarkOption = [self waterMarkOption];
     
     // 是否允许音量键拍照 (默认关闭)
-    opt.enableCaptureWithVolumeKeys = YES;
+    opt.enableCaptureWithVolumeKeys = NO;
     
     TuSDKPFCameraViewController *controller = opt.viewController;
     // 添加委托

@@ -64,4 +64,10 @@
     [self setNavigationBarHidden:YES];
 }
 
+-(void)showHubErrorWithStatus:(NSString *)status
+{
+    [self dismissHub];
+    return;
+}
+
 @end
