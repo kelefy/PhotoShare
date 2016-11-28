@@ -30,6 +30,8 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
 //- (id)initWithImage:(UIImage *)image tool:(CLStickerTool*)tool;
 - (id)initWithImage:(UIImage *)image tool:(CLStickerTool*)tool isXiangKuang:(BOOL)isXiangKuang;
 - (void)setScale:(CGFloat)scale;
+-(CGFloat)arg;
+-(CGFloat)scale;
 @end
 
 
@@ -55,6 +57,11 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
     
     __weak UIView *_gestureView;
     __weak UIImageView *_stickImageView;
+    
+    __weak UIButton *_leftButton;
+    __weak UIButton *_rightButton;
+    
+    CGRect _blurFrame;
 }
 
 + (NSArray*)subtools
@@ -261,12 +268,14 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
     //    [UIButton buttonWithFrame:CGRectMake(0, 0, 70, 70) imageName:@"TuSDK.bundle/ui_default/style_default_edit_button_cancel_bg"];
     [left addTarget:self.editor action:@selector(pushedCloseBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.editor.view addSubview:left];
+    _leftButton = left;
     
     UIButton *right = [[UIButton alloc]initWithFrame:CGRectMake(self.editor.view.width-70, 0, 70, 70)];
     //    [UIButton buttonWithFrame:CGRectMake(view.width-70, 0, 70, 70) imageName:@"TuSDK.bundle/ui_default/style_default_edit_button_confirm_bg"];
     [right setBackgroundImage:[UIImage imageNamed:@"TuSDK.bundle/ui_default/style_default_edit_button_confirm_bg"] forState:UIControlStateNormal];
     [right addTarget:self.editor action:@selector(pushedFinishBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.editor.view addSubview:right];
+    _rightButton = right;
     self.editor.view.backgroundColor = [UIColor silverSand];
     
     
@@ -306,18 +315,21 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
 
 - (void)tappedStickerPanel:(UITapGestureRecognizer*)sender
 {
-    NSArray *arr = _workingView.subviews;
+    NSArray *arr = _workingView.subviews;//所有贴纸相框
     
     
     
-    UIView *view = sender.view;
+    UIView *view = sender.view;//点击的贴纸
     
     NSString *filePath = view.userInfo[@"filePath"];
-    if(filePath){
-        
+    
+    if(filePath){ //是否相框
+        //如果点击相框
         BOOL isXiangKuang = [filePath containsString:@"/1/"];
         
         NSMutableArray<_CLStickerView *> *tempStickerArr = [NSMutableArray arrayWithCapacity:arr.count];
+        
+        _CLStickerView *view = [[_CLStickerView alloc] initWithImage:[UIImage imageWithContentsOfFile:filePath] tool:self isXiangKuang:isXiangKuang];
         
         if(isXiangKuang)
         {
@@ -329,7 +341,7 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
                     if(cl.isxk)
                     {
 //                        [self.editor.simpleEditMultipleController showHubErrorWithStatus:@"相框只可选择一个"];
-                        [cl removeFromSuperview];
+                        [cl removeFromSuperview]; //移除原来相框
                     }
                     else
                     {
@@ -337,21 +349,107 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
                     }
                 }
             }
+            
+            CGFloat ratio = MIN( (0.68 * _workingView.width) / view.width, (0.68 * _workingView.height) / view.height);
+            [view setScale:ratio];
+            
+            _blurFrame = view.frame;
+            _blurFrame.size.width -= 32;
+            _blurFrame.size.height -= 32;
+            
+            
+
         }
         
-        _CLStickerView *view = [[_CLStickerView alloc] initWithImage:[UIImage imageWithContentsOfFile:filePath] tool:self isXiangKuang:isXiangKuang];
-        CGFloat ratio = MIN( (0.5 * _workingView.width) / view.width, (0.5 * _workingView.height) / view.height);
-        [view setScale:ratio];
+        else
+        {
+            CGFloat ratio = MIN( (0.35 * _workingView.width) / view.width, (0.35 * _workingView.height) / view.height);
+            [view setScale:ratio];
+        }
+        
         view.center = CGPointMake(_workingView.width/2, _workingView.height/2);
+        
+        
+        if(_hadFullScreen&&view.isxk)
+        {//取消全屏相框
+            
+            _hadFullScreen = !_hadFullScreen;
+            
+            [self cleanFullScreen];
+            
+            self.editor.imageView.image = _originalImage;
+            
+            [self.editor setImageViewFrame];
+            
+            _workingView.frame = [self.editor.imageView.image getFrameinImageView:self.editor.imageView];
+        }
+        else if(_hadBlur&&view.isxk)
+        {
+            self.editor.imageView.image = _originalImage;
+            _hadBlur = !_hadBlur;
+            [_workingView removeAllSubviews];
+            [tempStickerArr enumerateObjectsUsingBlock:^(_CLStickerView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [_workingView addSubview:obj];
+            }];
+        }
+        
+        
         
         //虚化
         view.OnBlurButtonClickBlock = ^(_CLStickerView *_CLStickerView){
             
             if(!_hadBlur)
             {
-                UIImage *img1 = [UIImage imageCompressForSize:_originalImage targetSize:_CLStickerView.imageView.image.size];
-                _CLStickerView.imageView.image = [UIImage addImage:img1 withImage:_CLStickerView.imageView.image];
+//                UIImage *img1 = [UIImage imageCompressForSize:_originalImage targetSize:_CLStickerView.imageView.image.size];
+//                _CLStickerView.imageView.image = [UIImage addImage:img1 withImage:_CLStickerView.imageView.image];
+                
+                
+                UIView *workView = [[UIView alloc]initWithFrame:_CLStickerView.frame];
+//                workView.backgroundColor = [UIColor whiteColor];
+                workView.clipsToBounds = YES;
+                workView.frame = _blurFrame;
+                workView.center = CGPointMake(_workingView.width/2, _workingView.height/2);
+                [_workingView addSubview:workView];
+                
+                //原图
+                UIImageView *backgroundImgView = [[UIImageView alloc]initWithImage:_originalImage];
+                backgroundImgView.contentMode = UIViewContentModeScaleAspectFill;
+                backgroundImgView.frame = CGRectMake(0, 0, workView.width, workView.height);
+                
+                //            backgroundImgView.center = _workingView.center;
+                [workView addSubview:backgroundImgView];
+                _gestureView = backgroundImgView;
+                
+                
+                
+                //贴纸图片
+                UIImageView *stickImageView = [[UIImageView alloc]initWithImage:_CLStickerView.originalImage];
+                //            stickImageView.contentMode = UIViewContentModeScaleAspectFit;
+                //            stickImageView.backgroundColor = [UIColor whiteColor];
+                stickImageView.frame = _CLStickerView.frame;
+                _stickImageView = stickImageView;
+                _stickImageView.frame = _blurFrame;
+                _stickImageView.center = CGPointMake(_workingView.width/2, _workingView.height/2);
+                [_workingView addSubview:stickImageView];
+                
+                [self addGestureRecognizerToView:stickImageView];
+                stickImageView.userInteractionEnabled = YES;
+                stickImageView.multipleTouchEnabled = YES;
+                
+//                workView.transform = CGAffineTransformMakeRotation(5);
+//                stickImageView.transform = CGAffineTransformMakeRotation(5);
+                
+//                workView.transform = CGAffineTransformMakeScale(_CLStickerView.scale, _CLStickerView.scale);
+//                stickImageView.transform = CGAffineTransformMakeScale(_CLStickerView.scale, _CLStickerView.scale);
+                
+//                [_workingView bringSubviewToFront:_CLStickerView];
+//                [self addGestureRecognizerToView:_CLStickerView];
+                
+                
+                
                 self.editor.imageView.image = [UIImage blurryImage:_originalImage withBlurLevel:1];
+                
+                [_CLStickerView removeFromSuperview];
             }
             else
             {
@@ -429,17 +527,7 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
             
             _clStickerView.hidden = YES;
             
-//            UIView *whiteBackgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _workingView.width, _workingView.height)];
-//            whiteBackgroundView.backgroundColor = [UIColor whiteColor];
-//            [_workingView addSubview:whiteBackgroundView];
-            
-
-            
-            UIView *moveView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, fullSticker.size.width, fullSticker.size.height)];
-            moveView.backgroundColor = [UIColor orangeColor];
-            moveView.center = _workingView.center;
-//            [_workingView addSubview:moveView];
-            
+            //原图
             UIImageView *backgroundImgView = [[UIImageView alloc]initWithImage:_originalImage];
             backgroundImgView.contentMode = UIViewContentModeScaleAspectFill;
             backgroundImgView.frame = CGRectMake(0, 0, _workingView.width, _workingView.height);
@@ -447,6 +535,8 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
             [_workingView addSubview:backgroundImgView];
             _gestureView = backgroundImgView;
             
+            
+            //贴纸图片
             UIImageView *stickImageView = [[UIImageView alloc]initWithImage:fullSticker];
 //            stickImageView.contentMode = UIViewContentModeScaleAspectFit;
 //            stickImageView.backgroundColor = [UIColor whiteColor];
@@ -464,17 +554,6 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
         [_workingView addSubview:view];
         [_CLStickerView setActiveStickerView:view];
         
-        if(_hadFullScreen&&view.isxk)
-        {
-            [self cleanFullScreen];
-            view.OnFullButtonClickBlock(view);
-            [self bringSticksToFront];
-        }
-        else if(_hadBlur&&view.isxk)
-        {
-            _hadBlur = !_hadBlur;
-            view.OnBlurButtonClickBlock(view);
-        }
         
     }
     
@@ -757,6 +836,16 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
     _blurButton.hidden = !active;
     _fullButton.hidden = !active;
     _imageView.layer.borderWidth = (active) ? 2/_scale : 0;
+}
+
+-(CGFloat)arg
+{
+    return _arg;
+}
+
+-(CGFloat)scale
+{
+    return _scale;
 }
 
 - (void)setScale:(CGFloat)scale

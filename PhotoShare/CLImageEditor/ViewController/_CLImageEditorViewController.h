@@ -29,6 +29,7 @@
 
 - (id)initWithImage:(UIImage*)image;
 
+-(void)setImageViewFrame;
 
 - (void)fixZoomScaleWithAnimated:(BOOL)animated;
 - (void)resetZoomScaleWithAnimated:(BOOL)animated;

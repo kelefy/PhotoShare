@@ -114,7 +114,7 @@
     UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [shareBtn setImage:[UIImage imageNamed:@"btn_shareAction"] forState:UIControlStateNormal];
     shareBtn.frame = CGRectMake(0, 0, 60, 60);
-    [shareBtn addTarget:self action:@selector(onShareAction) forControlEvents:UIControlEventTouchUpInside];
+    [shareBtn addTarget:self action:@selector(onShareAction:) forControlEvents:UIControlEventTouchUpInside];
     
 //    
     [self addButtonsToBottomView:@[btnFilter,btnEditSkin,shareBtn,btnSticker,btnDrawing]];
@@ -217,10 +217,24 @@
 
 }
 
--(void)onShareAction
+-(void)onShareAction:(UIButton *)sender
 {
     UIActivityViewController *act = [[UIActivityViewController alloc]initWithActivityItems:@[self.defaultStyleView.imageView.image] applicationActivities:nil];
+//    act.popoverPresentationController.sourceView = self.view;
+//    act.popoverPresentationController.barButtonItem = self;
 //    act.excludedActivityTypes = @[UIActivityTypePostToFacebook,UIActivityTypePostToTwitter];
+//    [self presentViewController:act animated:YES completion:nil];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        
+    }
+    //if iPad
+    else {
+        // Change Rect to position Popover
+//        UIBarButtonItem *shareBarButtonItem = [[UIBarButtonItem alloc]init];
+        act.popoverPresentationController.sourceView = self.view;
+//        [popup presentPopoverFromBarButtonItem:shareBarButtonItem permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    }
     [self presentViewController:act animated:YES completion:nil];
 }
 

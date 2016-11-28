@@ -10,7 +10,7 @@
 #import "UIColor+Puertorico.h"
 #import "UIColor+Viking.h"
 #import "UIColor+Silversand.m"
-#import "UIView+Extension.h"
+#import "UIView+Extension.h"	
 
 @implementation SimpleEditFilterController
 

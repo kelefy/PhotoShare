@@ -213,7 +213,8 @@
     if(_imageView==nil){
         _imageView = [UIImageView new];
         [_scrollView addSubview:_imageView];
-        self.imageView.frame = self.imageFrame;
+//        self.imageView.frame = self.imageFrame;
+        [self setImageViewFrame];
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         _imageView.image = _originalImage;
         _imageView.frame = [self getFrameSizeForImage:_imageView.image inImageView:_imageView];
@@ -226,6 +227,11 @@
 //    tool.dockedNumber = -1;
 //    [self setupToolWithToolInfo:self.toolInfo.subtools[8]];
     [self setupToolWithToolInfo:self.toolInfo.subtools[self.setupToosIdx]];
+}
+
+-(void)setImageViewFrame
+{
+    self.imageView.frame = self.imageFrame;
 }
 
 - (void)didReceiveMemoryWarning
