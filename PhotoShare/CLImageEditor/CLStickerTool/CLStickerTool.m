@@ -331,6 +331,30 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
         
         _CLStickerView *view = [[_CLStickerView alloc] initWithImage:[UIImage imageWithContentsOfFile:filePath] tool:self isXiangKuang:isXiangKuang];
         
+        if(_hadFullScreen&&view.isxk)
+        {//取消全屏相框
+            
+            _hadFullScreen = !_hadFullScreen;
+            
+            [self cleanFullScreen];
+            
+            self.editor.imageView.image = _originalImage;
+            
+            [self.editor setImageViewFrame];
+            
+            _workingView.frame = [self.editor.imageView.image getFrameinImageView:self.editor.imageView];
+        }
+        else if(_hadBlur&&view.isxk)
+        {
+            self.editor.imageView.image = _originalImage;
+            _hadBlur = !_hadBlur;
+            [_workingView removeAllSubviews];
+            [tempStickerArr enumerateObjectsUsingBlock:^(_CLStickerView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [_workingView addSubview:obj];
+            }];
+        }
+
+        
         if(isXiangKuang)
         {
             for(int i = 0;i<arr.count;i++)
@@ -370,28 +394,6 @@ static NSString* const kCLStickerToolDeleteIconName = @"deleteIconAssetsName";
         view.center = CGPointMake(_workingView.width/2, _workingView.height/2);
         
         
-        if(_hadFullScreen&&view.isxk)
-        {//取消全屏相框
-            
-            _hadFullScreen = !_hadFullScreen;
-            
-            [self cleanFullScreen];
-            
-            self.editor.imageView.image = _originalImage;
-            
-            [self.editor setImageViewFrame];
-            
-            _workingView.frame = [self.editor.imageView.image getFrameinImageView:self.editor.imageView];
-        }
-        else if(_hadBlur&&view.isxk)
-        {
-            self.editor.imageView.image = _originalImage;
-            _hadBlur = !_hadBlur;
-            [_workingView removeAllSubviews];
-            [tempStickerArr enumerateObjectsUsingBlock:^(_CLStickerView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                [_workingView addSubview:obj];
-            }];
-        }
         
         
         
