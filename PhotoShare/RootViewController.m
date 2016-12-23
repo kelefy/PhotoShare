@@ -15,8 +15,9 @@
 #import "SimpleEditSkinController.h"
 #import "ExtendEditMultipleView.h"
 #import "SimpleEditCuterController.h"
+#import "TXHomePageView.h"
 
-@interface RootViewController()<TuSDKPFCameraDelegate>
+@interface RootViewController()<TuSDKPFCameraDelegate,HomePageDelegate>
 
 @end
 
@@ -41,21 +42,16 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.view.backgroundColor = [UIColor whiteColor];
-    UIImageView *image = [[UIImageView alloc]initWithFrame:self.view.frame];
-    image.image = [UIImage imageNamed:@"RootImage"];
-    [self.view addSubview:image];
-    // 开启访问相机权限
-    [TuSDKTSDeviceSettings checkAllowWithController:self
-                                               type:lsqDeviceSettingsCamera
-                                          completed:^(lsqDeviceSettingsType type, BOOL openSetting)
-     {
-         if (openSetting) {
-             lsqLError(@"Can not open camera");
-             return;
-         }
-         [self showCameraController];
-     }];
+//    UIImageView *image = [[UIImageView alloc]initWithFrame:self.view.frame];
+//    image.image = [UIImage imageNamed:@"RootImage"];
+//    [self.view addSubview:image];
+    
+    TXHomePageView *homePage = [[TXHomePageView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:homePage];
+    homePage.delegate = self;
+    
 //_photoEditMultipleComponent.options.editMultipleOptions.componentClazz = [SimpleEditMultipleController class];
 }
 
@@ -283,5 +279,21 @@
 }
 
 
+#pragma mark - HomePageDelegate
+
+-(void)skipButtonDidClick
+{
+    // 开启访问相机权限
+    [TuSDKTSDeviceSettings checkAllowWithController:self
+                                               type:lsqDeviceSettingsCamera
+                                          completed:^(lsqDeviceSettingsType type, BOOL openSetting)
+     {
+         if (openSetting) {
+             lsqLError(@"Can not open camera");
+             return;
+         }
+         [self showCameraController];
+     }];
+}
 
 @end

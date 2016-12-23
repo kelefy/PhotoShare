@@ -10,6 +10,7 @@
 #import <TuSDKGeeV1/TuSDKGeeV1.h>
 #import "RootViewController.h"
 #import "UIColor+Viking.h"
+#import "TXHomePageView.h"
 
 @interface AppDelegate ()
 
@@ -23,13 +24,17 @@
     // 初始化TuSDK
     [TuSDK initSdkWithAppKey:@"965d5c64fe0ceaf7-02-7lryp1"];
     //调试日志
+#ifdef DEBUG
     [TuSDK setLogLevel:lsqLogLevelDEBUG];
+#endif
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor clearColor];
     RootViewController *rootVc = [RootViewController new];
     // 初始化根控制器
     self.window.rootViewController = [[TuSDKICNavigationController alloc]initWithRootViewController:rootVc];
+    
+//    [self.window addSubview:homePage];
     [self.window makeKeyAndVisible];
     
     return YES;
