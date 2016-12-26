@@ -40,9 +40,9 @@
         {
             [skipButton setTitle:@"跳 过" forState:UIControlStateNormal];
         }
-        skipButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+        skipButton.titleLabel.font = [UIFont systemFontOfSize:18];
         [skipButton addTarget:self action:@selector(skipButtonClick) forControlEvents:UIControlEventTouchUpInside];
-        skipButton.frame = CGRectMake(imv.frame.size.width/2-50, self.pageControl.frame.origin.y-28, 100, 30);
+        skipButton.frame = CGRectMake(imv.frame.size.width/2-50, self.pageControl.frame.origin.y-25, 100, 30);
         skipButton.backgroundColor = [UIColor clearColor];
         [imv setUserInteractionEnabled:YES];
         [imv addSubview:skipButton];
@@ -86,13 +86,13 @@
     {
         CGRect mainRect = [UIScreen mainScreen].bounds;
         _mainScrollView = [[UIScrollView alloc]initWithFrame:mainRect];
-        NSArray *arrImages = [[NSArray alloc]initWithObjects:@"HomePage1",@"HomePage2",@"HomePage3",nil];
+        NSArray *arrImages = [[NSArray alloc]initWithObjects:@"1",@"2",@"3",nil];
         for(NSString * image in arrImages)
         {
             NSString *imagePath;
             if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
             {
-                imagePath = [NSString stringWithFormat:@"%@.png",image];
+                imagePath = [NSString stringWithFormat:@"%@@%ldx.png",image,(long)[UIScreen mainScreen].scale];
             }
             else
             {
