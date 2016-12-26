@@ -42,7 +42,7 @@
         }
         skipButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
         [skipButton addTarget:self action:@selector(skipButtonClick) forControlEvents:UIControlEventTouchUpInside];
-        skipButton.frame = CGRectMake(imv.frame.size.width/2-50, self.pageControl.frame.origin.y-28, 100, 30);
+        skipButton.frame = CGRectMake(imv.frame.size.width/2-50, self.pageControl.frame.origin.y-30, 100, 30);
         skipButton.backgroundColor = [UIColor clearColor];
         [imv setUserInteractionEnabled:YES];
         [imv addSubview:skipButton];
@@ -118,7 +118,7 @@
     if(!_pageControl)
     {
         CGRect mainRect = [UIScreen mainScreen].bounds;
-        _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(mainRect.size.width/2-50, mainRect.size.height-40, 100, 37)];
+        _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(mainRect.size.width/2-50, mainRect.size.height-50, 100, 37)];
         _pageControl.numberOfPages = _arrScrollImages.count;
         _pageControl.currentPage = 0;
         _pageControl.userInteractionEnabled = NO;
