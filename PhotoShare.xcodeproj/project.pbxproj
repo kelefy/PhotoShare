@@ -58,9 +58,6 @@
 		275AE9E51E0BCE5600071F30 /* HomePageImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 275AE9DC1E0BCE5600071F30 /* HomePageImage3.png */; };
 		275AE9E91E0BCE6200071F30 /* UIImage+ImageNotCached.m in Sources */ = {isa = PBXBuildFile; fileRef = 275AE9E81E0BCE6200071F30 /* UIImage+ImageNotCached.m */; };
 		275AE9EC1E0BCE8C00071F30 /* TXHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 275AE9EB1E0BCE8C00071F30 /* TXHomePageView.m */; };
-		275AE9F01E0BD9F800071F30 /* HomePageImage1_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 275AE9ED1E0BD9F800071F30 /* HomePageImage1_ipad.jpg */; };
-		275AE9F11E0BD9F800071F30 /* HomePageImage2_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 275AE9EE1E0BD9F800071F30 /* HomePageImage2_ipad.jpg */; };
-		275AE9F21E0BD9F800071F30 /* HomePageImage3_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 275AE9EF1E0BD9F800071F30 /* HomePageImage3_ipad.jpg */; };
 		2761EE7C1D901C46001246C5 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2761EE7B1D901C46001246C5 /* TuSDK.bundle */; };
 		276688081D37CB4400D1FB3D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276688071D37CB4400D1FB3D /* Social.framework */; };
 		276917B41D9CF8350044B660 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276917B31D9CF8350044B660 /* OpenGLES.framework */; };
@@ -94,6 +91,9 @@
 		2799CADE1D3B935400CA533B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799CADD1D3B935400CA533B /* RootViewController.m */; };
 		2799CAE41D3BCCE900CA533B /* ExtendCameraBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799CAE31D3BCCE900CA533B /* ExtendCameraBaseView.m */; };
 		2799CAE71D3BD08900CA533B /* SimpleEditMultipleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799CAE61D3BD08900CA533B /* SimpleEditMultipleController.m */; };
+		27E428671E111B760093356B /* HomePageImage1_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27E428641E111B760093356B /* HomePageImage1_ipad.jpg */; };
+		27E428681E111B760093356B /* HomePageImage2_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27E428651E111B760093356B /* HomePageImage2_ipad.jpg */; };
+		27E428691E111B760093356B /* HomePageImage3_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27E428661E111B760093356B /* HomePageImage3_ipad.jpg */; };
 		27F0A8CB1D390D2900407292 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F0A8CA1D390D2900407292 /* libMasonry.a */; };
 		BF1BE9A7F09FB2104B2954E7 /* libPods-特写美刻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C63BFD551B43C6F6C4106E /* libPods-特写美刻.a */; };
 /* End PBXBuildFile section */
@@ -200,9 +200,6 @@
 		275AE9E81E0BCE6200071F30 /* UIImage+ImageNotCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageNotCached.m"; sourceTree = "<group>"; };
 		275AE9EA1E0BCE8C00071F30 /* TXHomePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHomePageView.h; sourceTree = "<group>"; };
 		275AE9EB1E0BCE8C00071F30 /* TXHomePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHomePageView.m; sourceTree = "<group>"; };
-		275AE9ED1E0BD9F800071F30 /* HomePageImage1_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePageImage1_ipad.jpg; sourceTree = "<group>"; };
-		275AE9EE1E0BD9F800071F30 /* HomePageImage2_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePageImage2_ipad.jpg; sourceTree = "<group>"; };
-		275AE9EF1E0BD9F800071F30 /* HomePageImage3_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePageImage3_ipad.jpg; sourceTree = "<group>"; };
 		2761EE7B1D901C46001246C5 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TuSDK.bundle; sourceTree = "<group>"; };
 		276688071D37CB4400D1FB3D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		276917B31D9CF8350044B660 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -252,6 +249,9 @@
 		27B4297B1D49DF5B00F27DC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TuSDK.strings; sourceTree = "<group>"; };
 		27B4297C1D49DF5D00F27DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TuSDK.strings; sourceTree = "<group>"; };
 		27D37AE81D48A10700B4C8F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TuSDK.strings"; sourceTree = "<group>"; };
+		27E428641E111B760093356B /* HomePageImage1_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePageImage1_ipad.jpg; sourceTree = "<group>"; };
+		27E428651E111B760093356B /* HomePageImage2_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePageImage2_ipad.jpg; sourceTree = "<group>"; };
+		27E428661E111B760093356B /* HomePageImage3_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HomePageImage3_ipad.jpg; sourceTree = "<group>"; };
 		27F0A8CA1D390D2900407292 /* libMasonry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMasonry.a; path = "../../Library/Developer/Xcode/DerivedData/PhotoShare-elkdrlqwvrfztjeqtfaywiahbmue/Build/Products/Debug-iphoneos/Masonry/libMasonry.a"; sourceTree = "<group>"; };
 		52C63BFD551B43C6F6C4106E /* libPods-特写美刻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-特写美刻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A454D6F2A63478CFB11DF147 /* Pods-特写美刻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-特写美刻.release.xcconfig"; path = "Pods/Target Support Files/Pods-特写美刻/Pods-特写美刻.release.xcconfig"; sourceTree = "<group>"; };
@@ -545,9 +545,9 @@
 		275AE9D31E0BCE5600071F30 /* HomePageImages */ = {
 			isa = PBXGroup;
 			children = (
-				275AE9ED1E0BD9F800071F30 /* HomePageImage1_ipad.jpg */,
-				275AE9EE1E0BD9F800071F30 /* HomePageImage2_ipad.jpg */,
-				275AE9EF1E0BD9F800071F30 /* HomePageImage3_ipad.jpg */,
+				27E428641E111B760093356B /* HomePageImage1_ipad.jpg */,
+				27E428651E111B760093356B /* HomePageImage2_ipad.jpg */,
+				27E428661E111B760093356B /* HomePageImage3_ipad.jpg */,
 				275AE9D61E0BCE5600071F30 /* HomePageImage1.png */,
 				275AE9D91E0BCE5600071F30 /* HomePageImage2.png */,
 				275AE9DC1E0BCE5600071F30 /* HomePageImage3.png */,
@@ -742,16 +742,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275AE9F01E0BD9F800071F30 /* HomePageImage1_ipad.jpg in Resources */,
 				273C081E1D4D0A7B00A41682 /* CLImageEditor.bundle in Resources */,
-				275AE9F21E0BD9F800071F30 /* HomePageImage3_ipad.jpg in Resources */,
 				276AFD701D35C1CC00D709EB /* LaunchScreen.storyboard in Resources */,
+				27E428681E111B760093356B /* HomePageImage2_ipad.jpg in Resources */,
 				2761EE7C1D901C46001246C5 /* TuSDK.bundle in Resources */,
 				275AE9E21E0BCE5600071F30 /* HomePageImage2.png in Resources */,
-				275AE9F11E0BD9F800071F30 /* HomePageImage2_ipad.jpg in Resources */,
 				276AB16C1D44B289004F363B /* TuSDK.strings in Resources */,
 				276AFD6D1D35C1CC00D709EB /* Assets.xcassets in Resources */,
 				275AE9E51E0BCE5600071F30 /* HomePageImage3.png in Resources */,
+				27E428671E111B760093356B /* HomePageImage1_ipad.jpg in Resources */,
+				27E428691E111B760093356B /* HomePageImage3_ipad.jpg in Resources */,
 				275AE9DF1E0BCE5600071F30 /* HomePageImage1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
