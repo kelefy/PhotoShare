@@ -19,6 +19,8 @@
 
 @interface RootViewController()<TuSDKPFCameraDelegate,HomePageDelegate>
 
+@property (nonatomic,weak) TXHomePageView *homePageView;
+
 @end
 
 @implementation RootViewController
@@ -50,6 +52,7 @@
     
     TXHomePageView *homePage = [[TXHomePageView alloc]initWithFrame:self.view.frame];
     [self.view addSubview:homePage];
+    self.homePageView = homePage;
     homePage.delegate = self;
     
 //_photoEditMultipleComponent.options.editMultipleOptions.componentClazz = [SimpleEditMultipleController class];
@@ -293,6 +296,9 @@
              return;
          }
          [self showCameraController];
+         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [self.homePageView removeFromSuperview];
+         });
      }];
 }
 
